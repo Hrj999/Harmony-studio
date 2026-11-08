@@ -1,0 +1,2734 @@
+{
+  "schemaVersion": 1,
+  "title": "My Song Atlas",
+  "songs": [
+    {
+      "id": "zhaomi-jinsha",
+      "title": "着迷",
+      "artist": "金莎",
+      "key": "F",
+      "tempo": 80,
+      "meter": [
+        4,
+        4
+      ],
+      "duration": 282.2,
+      "gridDurationSeconds": 282,
+      "analysisStatus": "Working analysis — audio-informed draft",
+      "summary": "A whole-song study of how recurring F-major harmony can carry a long, tender thought: familiarity, local increases in direction, return, and release. The section story is an interpretation to test while listening.",
+      "thesis": "The expressive thread is continuity rather than constant harmonic novelty. A falling bass and recurring tonic–subdominant–dominant routes make recognizable places; secondary dominants briefly focus longing, and repeated sections let the melody and performance change what those places mean. The final suspended-to-unsuspended dominant gives the long return a definite close. This is a working reading of the reduction, not a claim about the composer's intention.",
+      "arc": [
+        "Find a home · The introduction establishes F major through a descending bass, with movement already inside the warmth.",
+        "Give the thought direction · Verse phrases briefly point toward D minor and C, then hand their expectation to the chorus.",
+        "Open and answer · Chorus halves revisit the descending route and reach toward B♭; uncertain middle colours remain visible for comparison.",
+        "Return with context · Later verses and choruses repeat familiar harmonic places. Melody, delivery, and arrangement should be heard before assigning a new emotional meaning.",
+        "Release · The coda narrows the route into C7sus4–C7–F, turning repeated preparation into a final close."
+      ],
+      "evidenceNote": "The full progression is adapted from the earlier computer-assisted audio-informed draft. It is not a verified edition or a fresh transcription. Keyboard and bass pitches are arranged reduction voicings. Amber/uncertain chords retain open alternatives; the other chords are working choices, not certified note-for-note matches.",
+      "melodyStatus": "No verified vocal staff transcription is supplied. Melody notes in this atlas are listening prompts; the earlier automatic vocal line had timing problems and is not used as proof.",
+      "timingNote": "Section names and boundaries are approximate. 94 four-beat grid bars cover 0:00–4:42 at 80 BPM. The source duration is about 4:42.2; the final 0.2 seconds lie outside that grid. Unmapped opening/tail bars are retained instead of inventing harmony.",
+      "sources": [
+        {
+          "title": "Full recording used for the earlier draft · Bilibili lyric video",
+          "url": "https://www.bilibili.com/video/BV1Bt411m7aD/",
+          "note": "Public lyric-video repost used as the full-length audio reference. Recording time alignment applies to this version."
+        },
+        {
+          "title": "着迷 · official Apple Music listing",
+          "url": "https://music.apple.com/hk/album/1755297238?i=1755297249",
+          "note": "The available official 30-second vocal preview was aligned to approximately 0:48–1:18 of the full reference. It does not verify the entire song."
+        },
+        {
+          "title": "着迷 · official accompaniment listing",
+          "url": "https://music.apple.com/hk/album/1755297238?i=1755297685",
+          "note": "A 30-second accompaniment preview informed the earlier comparison. No separated instrument stems or complete verified score were obtained."
+        }
+      ],
+      "sections": [
+        {
+          "id": "intro",
+          "name": "Introduction",
+          "startSeconds": 0,
+          "endSeconds": 27,
+          "role": "Establish a familiar place before the voice enters",
+          "analysis": "The draft begins its mapped harmony at about 0:03. F–Am7/E–Dm7–F/C–B♭maj7–F/A–Gm7 traces F–E–D–C–B♭–A–G in the bass, then C7sus4 prepares the return to F. The changing bass connects the chords into one long gesture. As an expressive reading, this can establish warmth with quiet movement already inside it: the song has a home, but it does not sit still.",
+          "melodyNote": "Listen to the instrumental line and the eventual vocal pickup as the bass descends. Does a sustained upper note make the changing bass feel like one thought? This is a listening prompt, not a verified melody transcription.",
+          "transition": "C7sus4 leaves the dominant's third unresolved; the verse starts on F. Compare the feeling of a prepared entrance with starting the verse directly on its first chord.",
+          "relatedEntryIds": [
+            "walking-beside-you",
+            "tenderness-study"
+          ],
+          "labConnection": "Walking Beside You explores a similar descending-bass gesture; its opening uses C/E rather than the draft's Am7/E, so the voicings and chord names are not identical.",
+          "timingNote": "Approximate section boundary on an 80 BPM, 4/4 working grid.",
+          "bars": [
+            {
+              "chords": [],
+              "globalBar": 1,
+              "startSeconds": 0.0,
+              "rest": true,
+              "comment": "Opening pickup / texture: no chord assigned in the source draft. This is an unmapped interval, not a verified claim of silence."
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "F",
+                  "notes": [
+                    41,
+                    60,
+                    65,
+                    69
+                  ],
+                  "roman": "I",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 3.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 2,
+              "startSeconds": 3.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Am7/E",
+                  "notes": [
+                    40,
+                    60,
+                    64,
+                    67,
+                    69
+                  ],
+                  "roman": "iii7 / E",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 6.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 3,
+              "startSeconds": 6.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Dm7",
+                  "notes": [
+                    38,
+                    60,
+                    62,
+                    65,
+                    69
+                  ],
+                  "roman": "vi7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 9.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 4,
+              "startSeconds": 9.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "F/C",
+                  "notes": [
+                    36,
+                    60,
+                    65,
+                    69
+                  ],
+                  "roman": "I / C",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 12.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 5,
+              "startSeconds": 12.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Bbmaj7",
+                  "notes": [
+                    46,
+                    62,
+                    65,
+                    69,
+                    70
+                  ],
+                  "roman": "IVmaj7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 15.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 6,
+              "startSeconds": 15.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "F/A",
+                  "notes": [
+                    45,
+                    60,
+                    65,
+                    69
+                  ],
+                  "roman": "I / A",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 18.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 7,
+              "startSeconds": 18.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Gm7",
+                  "notes": [
+                    43,
+                    62,
+                    65,
+                    67,
+                    70
+                  ],
+                  "roman": "ii7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 21.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 8,
+              "startSeconds": 21.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "C7sus4",
+                  "notes": [
+                    36,
+                    60,
+                    65,
+                    67,
+                    70
+                  ],
+                  "roman": "V7sus4",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 24.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 9,
+              "startSeconds": 24.0
+            }
+          ],
+          "uncertainChords": 0,
+          "tension": 1
+        },
+        {
+          "id": "verse-1a",
+          "name": "Verse 1 · first thought",
+          "startSeconds": 27,
+          "endSeconds": 51,
+          "role": "State the thought, then give it a little forward pull",
+          "analysis": "F–Dm7–B♭maj7–Fmaj7 first keeps the phrase close to the home key. The second half points toward D minor and then C through A7–Dm7 and G7–C7sus4. Those are local destinations within an F-major framework, rather than evidence of a lasting key change. The A chord near 0:39 is unresolved in the source analysis: A7 and Am7 remain alternatives.",
+          "melodyNote": "At the possible A7, compare C♯ with C natural against the sung line. A7 suggests a stronger directed pull toward D minor; Am7 keeps the colour inside F major. The pitch choice should be checked against the recording before treating it as settled.",
+          "transition": "The final suspended C chord holds some expectation so that the next F feels like a continuation, not a new scene.",
+          "relatedEntryIds": [
+            "letting-the-guard-down",
+            "gentle-momentum"
+          ],
+          "labConnection": "Try the A7/Am7 alternative in the Lab, then compare the G7–C dominant preparation with Gentle Momentum.",
+          "timingNote": "Approximate section boundary on an 80 BPM, 4/4 working grid.",
+          "bars": [
+            {
+              "chords": [
+                {
+                  "symbol": "F",
+                  "notes": [
+                    41,
+                    60,
+                    65,
+                    69
+                  ],
+                  "roman": "I",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 27.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 10,
+              "startSeconds": 27.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Dm7",
+                  "notes": [
+                    38,
+                    60,
+                    62,
+                    65,
+                    69
+                  ],
+                  "roman": "vi7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 30.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 11,
+              "startSeconds": 30.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Bbmaj7",
+                  "notes": [
+                    46,
+                    62,
+                    65,
+                    69,
+                    70
+                  ],
+                  "roman": "IVmaj7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 33.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 12,
+              "startSeconds": 33.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Fmaj7",
+                  "notes": [
+                    41,
+                    60,
+                    64,
+                    65,
+                    69
+                  ],
+                  "roman": "Imaj7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 36.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 13,
+              "startSeconds": 36.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "A7",
+                  "notes": [
+                    45,
+                    61,
+                    64,
+                    67,
+                    69
+                  ],
+                  "roman": "A7 or Am7 ?",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings. Chord colour or interpretation needs review against the recording. A7 versus Am7 is unresolved here.",
+                  "uncertain": true,
+                  "sourceConfidence": 0.55,
+                  "alternatives": [
+                    "A7",
+                    "Am7"
+                  ],
+                  "sourceEventStartSeconds": 39.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 14,
+              "startSeconds": 39.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Dm7",
+                  "notes": [
+                    38,
+                    60,
+                    62,
+                    65,
+                    69
+                  ],
+                  "roman": "vi7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 42.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 15,
+              "startSeconds": 42.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "G7",
+                  "notes": [
+                    43,
+                    62,
+                    65,
+                    67,
+                    71
+                  ],
+                  "roman": "V7/V",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 45.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 16,
+              "startSeconds": 45.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "C7sus4",
+                  "notes": [
+                    36,
+                    60,
+                    65,
+                    67,
+                    70
+                  ],
+                  "roman": "V7sus4",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 48.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 17,
+              "startSeconds": 48.0
+            }
+          ],
+          "uncertainChords": 1,
+          "tension": 2
+        },
+        {
+          "id": "verse-1b",
+          "name": "Verse 1 · continued thought",
+          "startSeconds": 51,
+          "endSeconds": 75,
+          "role": "Repeat the route and prepare a broader statement",
+          "analysis": "The same eight-bar harmonic plan returns. Because its destinations are now familiar, attention can move from identifying the route to hearing how the vocal phrase crosses it. The draft reads A7–Dm7 and G7–C7sus4 again, giving two small increases in direction before the chorus. This is one way a song can build coherence through repetition without needing a new key.",
+          "melodyNote": "Compare the length and placement of vocal phrases with the previous eight bars. Listen for notes that continue across a bar line and for whether the melody settles or keeps reaching while the chords repeat. No note-for-note vocal claim is implied here.",
+          "transition": "The suspended dominant is the hinge: the chorus can begin on Fmaj7 with both familiarity and a change of scale in the delivery.",
+          "relatedEntryIds": [
+            "gentle-momentum",
+            "letting-the-guard-down"
+          ],
+          "repriseOf": "verse-1a",
+          "labConnection": "Keep the chords the same in the Lab and vary tempo or touch to hear how repetition can change its character without reharmonization.",
+          "timingNote": "Approximate section boundary on an 80 BPM, 4/4 working grid.",
+          "bars": [
+            {
+              "chords": [
+                {
+                  "symbol": "F",
+                  "notes": [
+                    41,
+                    60,
+                    65,
+                    69
+                  ],
+                  "roman": "I",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 51.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 18,
+              "startSeconds": 51.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Dm7",
+                  "notes": [
+                    38,
+                    60,
+                    62,
+                    65,
+                    69
+                  ],
+                  "roman": "vi7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 54.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 19,
+              "startSeconds": 54.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Bbmaj7",
+                  "notes": [
+                    46,
+                    62,
+                    65,
+                    69,
+                    70
+                  ],
+                  "roman": "IVmaj7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 57.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 20,
+              "startSeconds": 57.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Fmaj7",
+                  "notes": [
+                    41,
+                    60,
+                    64,
+                    65,
+                    69
+                  ],
+                  "roman": "Imaj7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 60.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 21,
+              "startSeconds": 60.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "A7",
+                  "notes": [
+                    45,
+                    61,
+                    64,
+                    67,
+                    69
+                  ],
+                  "roman": "V7/vi",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 63.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 22,
+              "startSeconds": 63.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Dm7",
+                  "notes": [
+                    38,
+                    60,
+                    62,
+                    65,
+                    69
+                  ],
+                  "roman": "vi7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 66.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 23,
+              "startSeconds": 66.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "G7",
+                  "notes": [
+                    43,
+                    62,
+                    65,
+                    67,
+                    71
+                  ],
+                  "roman": "V7/V",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 69.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 24,
+              "startSeconds": 69.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "C7sus4",
+                  "notes": [
+                    36,
+                    60,
+                    65,
+                    67,
+                    70
+                  ],
+                  "roman": "V7sus4",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 72.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 25,
+              "startSeconds": 72.0
+            }
+          ],
+          "uncertainChords": 0,
+          "tension": 3
+        },
+        {
+          "id": "chorus-1a",
+          "name": "Chorus 1 · opening",
+          "startSeconds": 75,
+          "endSeconds": 99,
+          "role": "Let the thought open out while keeping a recognizable bass line",
+          "analysis": "Fmaj7–Am7/E–Dm7 recalls the introduction's falling bass. The draft then moves through a short C6–F passage into B♭maj7, before F/A–Gm7–C7sus4. The middle colour near 1:24–1:27 is tentative: the pitch evidence does not clearly establish the Cm7–F7 reading used elsewhere in the form. In this working C6–F reading, the move to B♭ feels less like a strongly announced tonicization and more like a widening of the home-key space.",
+          "melodyNote": "Listen to how the vocal line is sustained or shaped above the descending bass, especially the passage into B♭. The melody may determine whether an ambiguous C-based sonority sounds dominant-like, minor, or like an inversion of another chord.",
+          "transition": "The chorus half ends on the same suspended dominant, inviting a second statement rather than a final close.",
+          "relatedEntryIds": [
+            "walking-beside-you",
+            "room-to-breathe"
+          ],
+          "labConnection": "Compare the descending-bass opening with Walking Beside You. Treat Making Room's Cm7–F7–B♭ as an alternative to test, not as a verified match for this passage.",
+          "timingNote": "Approximate section boundary on an 80 BPM, 4/4 working grid.",
+          "bars": [
+            {
+              "chords": [
+                {
+                  "symbol": "Fmaj7",
+                  "notes": [
+                    41,
+                    60,
+                    64,
+                    65,
+                    69
+                  ],
+                  "roman": "Imaj7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 75.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 26,
+              "startSeconds": 75.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Am7/E",
+                  "notes": [
+                    40,
+                    60,
+                    64,
+                    67,
+                    69
+                  ],
+                  "roman": "iii7 / E",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 78.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 27,
+              "startSeconds": 78.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Dm7",
+                  "notes": [
+                    38,
+                    60,
+                    62,
+                    65,
+                    69
+                  ],
+                  "roman": "vi7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 81.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 28,
+              "startSeconds": 81.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "C6",
+                  "notes": [
+                    36,
+                    60,
+                    64,
+                    67,
+                    69
+                  ],
+                  "roman": "V(add6) ?",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings. Chord colour or interpretation needs review against the recording. C6 is the working choice; the recording does not clearly establish Cm7 in this occurrence.",
+                  "uncertain": true,
+                  "sourceConfidence": 0.55,
+                  "alternatives": [
+                    "C6",
+                    "Cm7"
+                  ],
+                  "sourceEventStartSeconds": 84.0,
+                  "beats": 2.0,
+                  "continuation": false
+                },
+                {
+                  "symbol": "F",
+                  "notes": [
+                    41,
+                    60,
+                    65,
+                    69
+                  ],
+                  "roman": "I ?",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings. Chord colour or interpretation needs review against the recording.",
+                  "uncertain": true,
+                  "sourceConfidence": 0.55,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 85.5,
+                  "beats": 2.0,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 29,
+              "startSeconds": 84.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Bbmaj7",
+                  "notes": [
+                    46,
+                    62,
+                    65,
+                    69,
+                    70
+                  ],
+                  "roman": "IVmaj7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 87.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 30,
+              "startSeconds": 87.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "F/A",
+                  "notes": [
+                    45,
+                    60,
+                    65,
+                    69
+                  ],
+                  "roman": "I / A",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 90.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 31,
+              "startSeconds": 90.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Gm7",
+                  "notes": [
+                    43,
+                    62,
+                    65,
+                    67,
+                    70
+                  ],
+                  "roman": "ii7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 93.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 32,
+              "startSeconds": 93.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "C7sus4",
+                  "notes": [
+                    36,
+                    60,
+                    65,
+                    67,
+                    70
+                  ],
+                  "roman": "V7sus4",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 96.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 33,
+              "startSeconds": 96.0
+            }
+          ],
+          "uncertainChords": 2,
+          "tension": 4
+        },
+        {
+          "id": "chorus-1b",
+          "name": "Chorus 1 · response",
+          "startSeconds": 99,
+          "endSeconds": 123,
+          "role": "Answer the opening and place more weight on the move to IV",
+          "analysis": "The opening three bars return, but the draft uses Cm7–F7 before B♭maj7 and later divides a bar between Am7 and Dm7. Cm7–F7 can be heard as ii–V of B♭, briefly directing attention toward the subdominant. The Cm7 and F7 colours still need checking at this point; they are analytical choices in an audio-informed reduction. If confirmed, the extra local direction would distinguish the response from a literal repeat.",
+          "melodyNote": "Compare this response with the preceding chorus half. Around the possible Cm7–F7, listen for E♭ versus E natural and for how the melody leads toward B♭. The automatic vocal draft is not used here as proof of those notes.",
+          "transition": "Gm7–C7sus4 prepares a return toward F, but the following interlude instead starts from B♭maj7 in the draft. That gives the next scene an already-open feeling.",
+          "relatedEntryIds": [
+            "making-room",
+            "walking-beside-you"
+          ],
+          "repriseOf": "chorus-1a",
+          "labConnection": "Making Room isolates the local ii–V–IV gesture in a short, editable study. It is a conceptual comparison; confirm the song's uncertain middle chords by listening.",
+          "timingNote": "Approximate section boundary on an 80 BPM, 4/4 working grid.",
+          "bars": [
+            {
+              "chords": [
+                {
+                  "symbol": "Fmaj7",
+                  "notes": [
+                    41,
+                    60,
+                    64,
+                    65,
+                    69
+                  ],
+                  "roman": "Imaj7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 99.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 34,
+              "startSeconds": 99.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Am7/E",
+                  "notes": [
+                    40,
+                    60,
+                    64,
+                    67,
+                    69
+                  ],
+                  "roman": "iii7 / E",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 102.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 35,
+              "startSeconds": 102.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Dm7",
+                  "notes": [
+                    38,
+                    60,
+                    62,
+                    65,
+                    69
+                  ],
+                  "roman": "vi7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 105.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 36,
+              "startSeconds": 105.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Cm7",
+                  "notes": [
+                    36,
+                    60,
+                    63,
+                    67,
+                    70
+                  ],
+                  "roman": "ii7/IV ?",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings. Chord colour or interpretation needs review against the recording.",
+                  "uncertain": true,
+                  "sourceConfidence": 0.55,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 108.0,
+                  "beats": 2.0,
+                  "continuation": false
+                },
+                {
+                  "symbol": "F7",
+                  "notes": [
+                    41,
+                    60,
+                    63,
+                    65,
+                    69
+                  ],
+                  "roman": "V7/IV ?",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings. Chord colour or interpretation needs review against the recording.",
+                  "uncertain": true,
+                  "sourceConfidence": 0.55,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 109.5,
+                  "beats": 2.0,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 37,
+              "startSeconds": 108.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Bbmaj7",
+                  "notes": [
+                    46,
+                    62,
+                    65,
+                    69,
+                    70
+                  ],
+                  "roman": "IVmaj7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 111.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 38,
+              "startSeconds": 111.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Am7",
+                  "notes": [
+                    45,
+                    60,
+                    64,
+                    67,
+                    69
+                  ],
+                  "roman": "iii7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 114.0,
+                  "beats": 2.0,
+                  "continuation": false
+                },
+                {
+                  "symbol": "Dm7",
+                  "notes": [
+                    38,
+                    60,
+                    62,
+                    65,
+                    69
+                  ],
+                  "roman": "vi7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 115.5,
+                  "beats": 2.0,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 39,
+              "startSeconds": 114.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Gm7",
+                  "notes": [
+                    43,
+                    62,
+                    65,
+                    67,
+                    70
+                  ],
+                  "roman": "ii7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 117.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 40,
+              "startSeconds": 117.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "C7sus4",
+                  "notes": [
+                    36,
+                    60,
+                    65,
+                    67,
+                    70
+                  ],
+                  "roman": "V7sus4",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 120.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 41,
+              "startSeconds": 120.0
+            }
+          ],
+          "uncertainChords": 2,
+          "tension": 3
+        },
+        {
+          "id": "interlude",
+          "name": "Interlude",
+          "startSeconds": 123,
+          "endSeconds": 135,
+          "role": "Make a little distance before returning to the narrative",
+          "analysis": "The tentative reduction reads B♭maj7–F/A–E♭maj7–C7sus4. E♭ lies outside the F-major collection and can offer a different shade before the familiar dominant brings the song back. This whole four-bar harmonic reading is less secure than the repeated verse framework. It is useful as a question to investigate, not as a definitive claim that the arrangement changes key.",
+          "melodyNote": "Listen to the instrumental lead separately from the bass: is E♭ a chord root, an inner note, or part of a passing texture? This is a good place to revise the harmonic labels while keeping the rest of the song map intact.",
+          "transition": "The final C7sus4 reconnects this detour with the F at the beginning of Verse 2.",
+          "relatedEntryIds": [
+            "room-to-breathe"
+          ],
+          "labConnection": "Use the Lab to compare E♭maj7 with a diatonic alternative while holding the surrounding B♭–F/A–C gesture fixed.",
+          "timingNote": "Approximate section boundary on an 80 BPM, 4/4 working grid.",
+          "bars": [
+            {
+              "chords": [
+                {
+                  "symbol": "Bbmaj7",
+                  "notes": [
+                    46,
+                    62,
+                    65,
+                    69,
+                    70
+                  ],
+                  "roman": "IVmaj7 ?",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings. Chord colour or interpretation needs review against the recording.",
+                  "uncertain": true,
+                  "sourceConfidence": 0.55,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 123.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 42,
+              "startSeconds": 123.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "F/A",
+                  "notes": [
+                    45,
+                    60,
+                    65,
+                    69
+                  ],
+                  "roman": "I / A ?",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings. Chord colour or interpretation needs review against the recording.",
+                  "uncertain": true,
+                  "sourceConfidence": 0.55,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 126.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 43,
+              "startSeconds": 126.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Ebmaj7",
+                  "notes": [
+                    39,
+                    62,
+                    63,
+                    67,
+                    70
+                  ],
+                  "roman": "bVIImaj7 ?",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings. Chord colour or interpretation needs review against the recording.",
+                  "uncertain": true,
+                  "sourceConfidence": 0.55,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 129.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 44,
+              "startSeconds": 129.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "C7sus4",
+                  "notes": [
+                    36,
+                    60,
+                    65,
+                    67,
+                    70
+                  ],
+                  "roman": "V7sus4",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 132.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 45,
+              "startSeconds": 132.0
+            }
+          ],
+          "uncertainChords": 3,
+          "tension": 2
+        },
+        {
+          "id": "verse-2",
+          "name": "Verse 2",
+          "startSeconds": 135,
+          "endSeconds": 159,
+          "role": "Revisit the thought after the first large statement",
+          "analysis": "The verse's F–Dm7–B♭maj7–Fmaj7–A7–Dm7–G7–C7sus4 plan returns. Its place in the form changes what repetition can mean: after a chorus and interlude, the same harmonic route can sound like recollection rather than introduction. That is an interpretive possibility, not a fixed meaning encoded in the chords. The continuing F-major center helps the full piece feel like one sustained conversation.",
+          "melodyNote": "Compare the vocal rhythm, breathing, register, and instrumental support with Verse 1. Differences in those elements can make a repeated progression carry a fresh stage of the thought, even when its harmonic grammar is stable.",
+          "transition": "The same dominant preparation leads back into a recognizable chorus entrance.",
+          "relatedEntryIds": [
+            "letting-the-guard-down",
+            "gentle-momentum"
+          ],
+          "repriseOf": "verse-1a",
+          "labConnection": "Use the same Lab phrase twice and change only the performance to test how context and delivery can renew repeated harmony.",
+          "timingNote": "Approximate section boundary on an 80 BPM, 4/4 working grid.",
+          "bars": [
+            {
+              "chords": [
+                {
+                  "symbol": "F",
+                  "notes": [
+                    41,
+                    60,
+                    65,
+                    69
+                  ],
+                  "roman": "I",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 135.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 46,
+              "startSeconds": 135.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Dm7",
+                  "notes": [
+                    38,
+                    60,
+                    62,
+                    65,
+                    69
+                  ],
+                  "roman": "vi7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 138.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 47,
+              "startSeconds": 138.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Bbmaj7",
+                  "notes": [
+                    46,
+                    62,
+                    65,
+                    69,
+                    70
+                  ],
+                  "roman": "IVmaj7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 141.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 48,
+              "startSeconds": 141.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Fmaj7",
+                  "notes": [
+                    41,
+                    60,
+                    64,
+                    65,
+                    69
+                  ],
+                  "roman": "Imaj7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 144.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 49,
+              "startSeconds": 144.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "A7",
+                  "notes": [
+                    45,
+                    61,
+                    64,
+                    67,
+                    69
+                  ],
+                  "roman": "V7/vi",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 147.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 50,
+              "startSeconds": 147.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Dm7",
+                  "notes": [
+                    38,
+                    60,
+                    62,
+                    65,
+                    69
+                  ],
+                  "roman": "vi7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 150.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 51,
+              "startSeconds": 150.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "G7",
+                  "notes": [
+                    43,
+                    62,
+                    65,
+                    67,
+                    71
+                  ],
+                  "roman": "V7/V",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 153.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 52,
+              "startSeconds": 153.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "C7sus4",
+                  "notes": [
+                    36,
+                    60,
+                    65,
+                    67,
+                    70
+                  ],
+                  "roman": "V7sus4",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 156.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 53,
+              "startSeconds": 156.0
+            }
+          ],
+          "uncertainChords": 0,
+          "tension": 3
+        },
+        {
+          "id": "chorus-2a",
+          "name": "Chorus 2 · opening",
+          "startSeconds": 159,
+          "endSeconds": 183,
+          "role": "Recognize the central statement and hear what its return adds",
+          "analysis": "The chorus opening returns in the same key, with the same tentative C6–F reading in the middle. Repetition gives the listener a reliable shape: the bass descends, the harmony reaches B♭, and the dominant leaves room for an answer. Any increase in intensity should be assessed in the actual vocal and arrangement, rather than inferred from a new chord progression that the draft does not show.",
+          "melodyNote": "Compare the same melodic moment at about 1:15 and 2:39. Listen for changes of emphasis, sustained notes, or accompaniment density. Those observations can explain a stronger emotional impression without inventing a modulation.",
+          "transition": "The suspended dominant again hands the phrase to its response.",
+          "relatedEntryIds": [
+            "walking-beside-you",
+            "room-to-breathe"
+          ],
+          "repriseOf": "chorus-1a",
+          "labConnection": "The Lab can hold harmony constant for comparison; your song notes can record what the actual performance changes on this return.",
+          "timingNote": "Approximate section boundary on an 80 BPM, 4/4 working grid.",
+          "bars": [
+            {
+              "chords": [
+                {
+                  "symbol": "Fmaj7",
+                  "notes": [
+                    41,
+                    60,
+                    64,
+                    65,
+                    69
+                  ],
+                  "roman": "Imaj7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 159.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 54,
+              "startSeconds": 159.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Am7/E",
+                  "notes": [
+                    40,
+                    60,
+                    64,
+                    67,
+                    69
+                  ],
+                  "roman": "iii7 / E",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 162.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 55,
+              "startSeconds": 162.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Dm7",
+                  "notes": [
+                    38,
+                    60,
+                    62,
+                    65,
+                    69
+                  ],
+                  "roman": "vi7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 165.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 56,
+              "startSeconds": 165.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "C6",
+                  "notes": [
+                    36,
+                    60,
+                    64,
+                    67,
+                    69
+                  ],
+                  "roman": "V(add6) ?",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings. Chord colour or interpretation needs review against the recording. C6 is the working choice; the recording does not clearly establish Cm7 in this occurrence.",
+                  "uncertain": true,
+                  "sourceConfidence": 0.55,
+                  "alternatives": [
+                    "C6",
+                    "Cm7"
+                  ],
+                  "sourceEventStartSeconds": 168.0,
+                  "beats": 2.0,
+                  "continuation": false
+                },
+                {
+                  "symbol": "F",
+                  "notes": [
+                    41,
+                    60,
+                    65,
+                    69
+                  ],
+                  "roman": "I ?",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings. Chord colour or interpretation needs review against the recording.",
+                  "uncertain": true,
+                  "sourceConfidence": 0.55,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 169.5,
+                  "beats": 2.0,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 57,
+              "startSeconds": 168.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Bbmaj7",
+                  "notes": [
+                    46,
+                    62,
+                    65,
+                    69,
+                    70
+                  ],
+                  "roman": "IVmaj7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 171.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 58,
+              "startSeconds": 171.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "F/A",
+                  "notes": [
+                    45,
+                    60,
+                    65,
+                    69
+                  ],
+                  "roman": "I / A",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 174.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 59,
+              "startSeconds": 174.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Gm7",
+                  "notes": [
+                    43,
+                    62,
+                    65,
+                    67,
+                    70
+                  ],
+                  "roman": "ii7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 177.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 60,
+              "startSeconds": 177.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "C7sus4",
+                  "notes": [
+                    36,
+                    60,
+                    65,
+                    67,
+                    70
+                  ],
+                  "roman": "V7sus4",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 180.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 61,
+              "startSeconds": 180.0
+            }
+          ],
+          "uncertainChords": 2,
+          "tension": 4
+        },
+        {
+          "id": "chorus-2b",
+          "name": "Chorus 2 · response",
+          "startSeconds": 183,
+          "endSeconds": 207,
+          "role": "Repeat the response while leaving its ambiguous colour open to review",
+          "analysis": "The response follows the familiar eight-bar outline, but the source draft reads C7sus4–F7 rather than Cm7–F7 in its middle half-bar passage. Both chords there are marked for review. Do not flatten every chorus repeat into one copied chord list: repeated sections can contain real changes, and uncertain evidence can also produce apparent differences. Keeping each occurrence visible makes that distinction possible.",
+          "melodyNote": "Compare the short passage near 3:12 with its counterpart near 1:48. Does the sung note support a suspended F over C, or a minor third E♭? Let the recording decide before assigning a different dramatic meaning to the apparent change.",
+          "transition": "After the dominant, a short two-bar link gives the final chorus a separate entrance.",
+          "relatedEntryIds": [
+            "making-room",
+            "room-to-breathe"
+          ],
+          "repriseOf": "chorus-1b",
+          "labConnection": "Compare the suspected Cm7 and C7sus4 alternatives as experiments. Save the useful sound separately from your judgment about what the recording actually contains.",
+          "timingNote": "Approximate section boundary on an 80 BPM, 4/4 working grid.",
+          "bars": [
+            {
+              "chords": [
+                {
+                  "symbol": "Fmaj7",
+                  "notes": [
+                    41,
+                    60,
+                    64,
+                    65,
+                    69
+                  ],
+                  "roman": "Imaj7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 183.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 62,
+              "startSeconds": 183.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Am7/E",
+                  "notes": [
+                    40,
+                    60,
+                    64,
+                    67,
+                    69
+                  ],
+                  "roman": "iii7 / E",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 186.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 63,
+              "startSeconds": 186.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Dm7",
+                  "notes": [
+                    38,
+                    60,
+                    62,
+                    65,
+                    69
+                  ],
+                  "roman": "vi7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 189.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 64,
+              "startSeconds": 189.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "C7sus4",
+                  "notes": [
+                    36,
+                    60,
+                    65,
+                    67,
+                    70
+                  ],
+                  "roman": "V7sus4 ?",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings. Chord colour or interpretation needs review against the recording. Compare the suspended-dominant and minor-seventh readings; this occurrence differs from some other chorus halves in the source draft.",
+                  "uncertain": true,
+                  "sourceConfidence": 0.55,
+                  "alternatives": [
+                    "C7sus4",
+                    "Cm7"
+                  ],
+                  "sourceEventStartSeconds": 192.0,
+                  "beats": 2.0,
+                  "continuation": false
+                },
+                {
+                  "symbol": "F7",
+                  "notes": [
+                    41,
+                    60,
+                    63,
+                    65,
+                    69
+                  ],
+                  "roman": "V7/IV ?",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings. Chord colour or interpretation needs review against the recording.",
+                  "uncertain": true,
+                  "sourceConfidence": 0.55,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 193.5,
+                  "beats": 2.0,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 65,
+              "startSeconds": 192.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Bbmaj7",
+                  "notes": [
+                    46,
+                    62,
+                    65,
+                    69,
+                    70
+                  ],
+                  "roman": "IVmaj7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 195.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 66,
+              "startSeconds": 195.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Am7",
+                  "notes": [
+                    45,
+                    60,
+                    64,
+                    67,
+                    69
+                  ],
+                  "roman": "iii7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 198.0,
+                  "beats": 2.0,
+                  "continuation": false
+                },
+                {
+                  "symbol": "Dm7",
+                  "notes": [
+                    38,
+                    60,
+                    62,
+                    65,
+                    69
+                  ],
+                  "roman": "vi7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 199.5,
+                  "beats": 2.0,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 67,
+              "startSeconds": 198.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Gm7",
+                  "notes": [
+                    43,
+                    62,
+                    65,
+                    67,
+                    70
+                  ],
+                  "roman": "ii7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 201.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 68,
+              "startSeconds": 201.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "C7sus4",
+                  "notes": [
+                    36,
+                    60,
+                    65,
+                    67,
+                    70
+                  ],
+                  "roman": "V7sus4",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 204.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 69,
+              "startSeconds": 204.0
+            }
+          ],
+          "uncertainChords": 2,
+          "tension": 3
+        },
+        {
+          "id": "link",
+          "name": "Short link",
+          "startSeconds": 207,
+          "endSeconds": 213,
+          "role": "Take a breath before the final return",
+          "analysis": "The two-bar draft reads F–C7sus4. This very small tonic-to-dominant turn can reset attention without introducing a new harmonic topic. Both chord readings are tentative. Its formal role matters more than its size: a brief hinge can make a repeated chorus feel deliberately re-entered.",
+          "melodyNote": "Listen for the end of the preceding vocal phrase and the space before the final entrance. A breath, pickup, or held note can make these two bars feel like a preparation rather than another ending.",
+          "transition": "C7sus4 points directly to the final chorus's Fmaj7; the draft stays in F major.",
+          "relatedEntryIds": [
+            "room-to-breathe"
+          ],
+          "labConnection": "Try only the two-bar F–C7sus4 hinge in the Lab, then attach the chorus opening to hear how preparation changes the same first chord.",
+          "timingNote": "Approximate section boundary on an 80 BPM, 4/4 working grid.",
+          "bars": [
+            {
+              "chords": [
+                {
+                  "symbol": "F",
+                  "notes": [
+                    41,
+                    60,
+                    65,
+                    69
+                  ],
+                  "roman": "I ?",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings. Chord colour or interpretation needs review against the recording.",
+                  "uncertain": true,
+                  "sourceConfidence": 0.55,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 207.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 70,
+              "startSeconds": 207.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "C7sus4",
+                  "notes": [
+                    36,
+                    60,
+                    65,
+                    67,
+                    70
+                  ],
+                  "roman": "V7sus4 ?",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings. Chord colour or interpretation needs review against the recording.",
+                  "uncertain": true,
+                  "sourceConfidence": 0.55,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 210.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 71,
+              "startSeconds": 210.0
+            }
+          ],
+          "uncertainChords": 2,
+          "tension": 2
+        },
+        {
+          "id": "final-chorus-a",
+          "name": "Final chorus · opening",
+          "startSeconds": 213,
+          "endSeconds": 237,
+          "role": "Return to the central thought with accumulated context",
+          "analysis": "The final chorus preserves the familiar Fmaj7–Am7/E–Dm7 descent. Its middle passage is drafted as Cm7–F7 into B♭maj7, with the same caution about the exact sonority. The map does not show a sustained upward modulation: a greater sense of arrival here can come from accumulated repetition, vocal delivery, and arrangement. The harmony's familiarity can let the melody carry the culmination.",
+          "melodyNote": "Compare this entrance with the first chorus. Record any concrete change you hear in register, phrase length, articulation, or instrumental support. An emotional climax need not coincide with a new key or a new chord sequence.",
+          "transition": "The same dominant keeps the thought moving into one more response.",
+          "relatedEntryIds": [
+            "walking-beside-you",
+            "making-room"
+          ],
+          "repriseOf": "chorus-1a",
+          "labConnection": "The related studies separate the descending-bass gesture from the possible local ii–V of B♭, so you can hear each component before returning to the full recording.",
+          "timingNote": "Approximate section boundary on an 80 BPM, 4/4 working grid.",
+          "bars": [
+            {
+              "chords": [
+                {
+                  "symbol": "Fmaj7",
+                  "notes": [
+                    41,
+                    60,
+                    64,
+                    65,
+                    69
+                  ],
+                  "roman": "Imaj7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 213.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 72,
+              "startSeconds": 213.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Am7/E",
+                  "notes": [
+                    40,
+                    60,
+                    64,
+                    67,
+                    69
+                  ],
+                  "roman": "iii7 / E",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 216.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 73,
+              "startSeconds": 216.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Dm7",
+                  "notes": [
+                    38,
+                    60,
+                    62,
+                    65,
+                    69
+                  ],
+                  "roman": "vi7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 219.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 74,
+              "startSeconds": 219.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Cm7",
+                  "notes": [
+                    36,
+                    60,
+                    63,
+                    67,
+                    70
+                  ],
+                  "roman": "ii7/IV ?",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings. Chord colour or interpretation needs review against the recording.",
+                  "uncertain": true,
+                  "sourceConfidence": 0.55,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 222.0,
+                  "beats": 2.0,
+                  "continuation": false
+                },
+                {
+                  "symbol": "F7",
+                  "notes": [
+                    41,
+                    60,
+                    63,
+                    65,
+                    69
+                  ],
+                  "roman": "V7/IV ?",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings. Chord colour or interpretation needs review against the recording.",
+                  "uncertain": true,
+                  "sourceConfidence": 0.55,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 223.5,
+                  "beats": 2.0,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 75,
+              "startSeconds": 222.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Bbmaj7",
+                  "notes": [
+                    46,
+                    62,
+                    65,
+                    69,
+                    70
+                  ],
+                  "roman": "IVmaj7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 225.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 76,
+              "startSeconds": 225.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "F/A",
+                  "notes": [
+                    45,
+                    60,
+                    65,
+                    69
+                  ],
+                  "roman": "I / A",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 228.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 77,
+              "startSeconds": 228.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Gm7",
+                  "notes": [
+                    43,
+                    62,
+                    65,
+                    67,
+                    70
+                  ],
+                  "roman": "ii7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 231.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 78,
+              "startSeconds": 231.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "C7sus4",
+                  "notes": [
+                    36,
+                    60,
+                    65,
+                    67,
+                    70
+                  ],
+                  "roman": "V7sus4",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 234.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 79,
+              "startSeconds": 234.0
+            }
+          ],
+          "uncertainChords": 2,
+          "tension": 4
+        },
+        {
+          "id": "final-chorus-b",
+          "name": "Final chorus · response",
+          "startSeconds": 237,
+          "endSeconds": 261,
+          "role": "Complete the large statement and prepare to release it",
+          "analysis": "The familiar response returns, including the tentative C7sus4–F7 passage and the later Am7–Dm7 split bar. The song's expressive continuity comes from recognizable places being revisited with new context. In this reading, the remaining dominant does not supply the final answer itself; it passes that task to the coda.",
+          "melodyNote": "Listen for whether the final vocal response stretches, repeats, or relaxes its melodic material. Note the exact passage and performance you mean, so that the description stays tied to audible evidence rather than the chord names alone.",
+          "transition": "The coda begins from B♭maj7 and narrows the route toward a final dominant–tonic close.",
+          "relatedEntryIds": [
+            "making-room",
+            "room-to-breathe"
+          ],
+          "repriseOf": "chorus-2b",
+          "labConnection": "Compare the response's final ii–V gesture with the shorter closing patterns in the Lab. The song's coda uses a plain F reading rather than the studies' optional added-note endings.",
+          "timingNote": "Approximate section boundary on an 80 BPM, 4/4 working grid.",
+          "bars": [
+            {
+              "chords": [
+                {
+                  "symbol": "Fmaj7",
+                  "notes": [
+                    41,
+                    60,
+                    64,
+                    65,
+                    69
+                  ],
+                  "roman": "Imaj7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 237.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 80,
+              "startSeconds": 237.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Am7/E",
+                  "notes": [
+                    40,
+                    60,
+                    64,
+                    67,
+                    69
+                  ],
+                  "roman": "iii7 / E",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 240.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 81,
+              "startSeconds": 240.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Dm7",
+                  "notes": [
+                    38,
+                    60,
+                    62,
+                    65,
+                    69
+                  ],
+                  "roman": "vi7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 243.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 82,
+              "startSeconds": 243.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "C7sus4",
+                  "notes": [
+                    36,
+                    60,
+                    65,
+                    67,
+                    70
+                  ],
+                  "roman": "V7sus4 ?",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings. Chord colour or interpretation needs review against the recording. Compare the suspended-dominant and minor-seventh readings; this occurrence differs from some other chorus halves in the source draft.",
+                  "uncertain": true,
+                  "sourceConfidence": 0.55,
+                  "alternatives": [
+                    "C7sus4",
+                    "Cm7"
+                  ],
+                  "sourceEventStartSeconds": 246.0,
+                  "beats": 2.0,
+                  "continuation": false
+                },
+                {
+                  "symbol": "F7",
+                  "notes": [
+                    41,
+                    60,
+                    63,
+                    65,
+                    69
+                  ],
+                  "roman": "V7/IV ?",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings. Chord colour or interpretation needs review against the recording.",
+                  "uncertain": true,
+                  "sourceConfidence": 0.55,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 247.5,
+                  "beats": 2.0,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 83,
+              "startSeconds": 246.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Bbmaj7",
+                  "notes": [
+                    46,
+                    62,
+                    65,
+                    69,
+                    70
+                  ],
+                  "roman": "IVmaj7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 249.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 84,
+              "startSeconds": 249.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Am7",
+                  "notes": [
+                    45,
+                    60,
+                    64,
+                    67,
+                    69
+                  ],
+                  "roman": "iii7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 252.0,
+                  "beats": 2.0,
+                  "continuation": false
+                },
+                {
+                  "symbol": "Dm7",
+                  "notes": [
+                    38,
+                    60,
+                    62,
+                    65,
+                    69
+                  ],
+                  "roman": "vi7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 253.5,
+                  "beats": 2.0,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 85,
+              "startSeconds": 252.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Gm7",
+                  "notes": [
+                    43,
+                    62,
+                    65,
+                    67,
+                    70
+                  ],
+                  "roman": "ii7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 255.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 86,
+              "startSeconds": 255.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "C7sus4",
+                  "notes": [
+                    36,
+                    60,
+                    65,
+                    67,
+                    70
+                  ],
+                  "roman": "V7sus4",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 258.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 87,
+              "startSeconds": 258.0
+            }
+          ],
+          "uncertainChords": 2,
+          "tension": 4
+        },
+        {
+          "id": "outro",
+          "name": "Coda / outro",
+          "startSeconds": 261,
+          "endSeconds": 282,
+          "role": "Let the long thought come to rest",
+          "analysis": "The draft closes through B♭maj7–F/A–Gm7–C7sus4–C7–F. The suspended dominant finally supplies its third before the tonic, creating a more explicit final close than simply looping another chorus. The last F is held in the reduction through about 4:39; its repeated bar symbols below are continuations of one sustained event, not new chord changes. The tail after 4:39 has no assigned chord in this draft.",
+          "melodyNote": "Listen to the final vocal release and the instrumental decay separately. What remains after the main phrase ends can determine whether the tonic feels final, lingering, or open in the actual performance.",
+          "transition": "The mapped harmonic journey ends on F. The final unassigned tail is retained in the timing map rather than supplied with an invented chord.",
+          "relatedEntryIds": [
+            "room-to-breathe",
+            "easy-conversation"
+          ],
+          "labConnection": "Room to Breathe isolates the suspended-to-unsuspended dominant release. Easy Conversation offers a contrasting sixth-and-ninth tonic ending; the song draft here ends on plain F, not F6/9.",
+          "timingNote": "Approximate section boundary on an 80 BPM, 4/4 working grid.",
+          "bars": [
+            {
+              "chords": [
+                {
+                  "symbol": "Bbmaj7",
+                  "notes": [
+                    46,
+                    62,
+                    65,
+                    69,
+                    70
+                  ],
+                  "roman": "IVmaj7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 261.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 88,
+              "startSeconds": 261.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "F/A",
+                  "notes": [
+                    45,
+                    60,
+                    65,
+                    69
+                  ],
+                  "roman": "I / A",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 264.0,
+                  "beats": 4,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 89,
+              "startSeconds": 264.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Gm7",
+                  "notes": [
+                    43,
+                    62,
+                    65,
+                    67,
+                    70
+                  ],
+                  "roman": "ii7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 267.0,
+                  "beats": 2.0,
+                  "continuation": false
+                },
+                {
+                  "symbol": "C7sus4",
+                  "notes": [
+                    36,
+                    60,
+                    65,
+                    67,
+                    70
+                  ],
+                  "roman": "V7sus4",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 268.5,
+                  "beats": 2.0,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 90,
+              "startSeconds": 267.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "C7",
+                  "notes": [
+                    36,
+                    60,
+                    64,
+                    67,
+                    70
+                  ],
+                  "roman": "V7",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 270.0,
+                  "beats": 2.0,
+                  "continuation": false
+                },
+                {
+                  "symbol": "F",
+                  "notes": [
+                    41,
+                    60,
+                    65,
+                    69
+                  ],
+                  "roman": "I",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 271.5,
+                  "beats": 2.0,
+                  "continuation": false
+                }
+              ],
+              "globalBar": 91,
+              "startSeconds": 270.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "F",
+                  "notes": [
+                    41,
+                    60,
+                    65,
+                    69
+                  ],
+                  "roman": "I",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings. Continuation of the same sustained chord from the preceding bar.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 271.5,
+                  "beats": 4,
+                  "continuation": true
+                }
+              ],
+              "globalBar": 92,
+              "startSeconds": 273.0
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "F",
+                  "notes": [
+                    41,
+                    60,
+                    65,
+                    69
+                  ],
+                  "roman": "I",
+                  "comment": "Arranged keyboard-and-bass reduction; not recovered instrument voicings. Continuation of the same sustained chord from the preceding bar.",
+                  "uncertain": false,
+                  "sourceConfidence": 0.85,
+                  "alternatives": [],
+                  "sourceEventStartSeconds": 271.5,
+                  "beats": 4,
+                  "continuation": true
+                }
+              ],
+              "globalBar": 93,
+              "startSeconds": 276.0
+            },
+            {
+              "chords": [],
+              "globalBar": 94,
+              "startSeconds": 279.0,
+              "rest": true,
+              "comment": "Recording tail: no chord assigned after the final sustained F. This is an unmapped interval, not a verified claim of silence."
+            }
+          ],
+          "uncertainChords": 0,
+          "tension": 1
+        }
+      ]
+    }
+  ]
+}

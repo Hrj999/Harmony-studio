@@ -1,0 +1,1346 @@
+{
+  "schemaVersion": 1,
+  "title": "My Harmony Dictionary",
+  "personalProfile": "Warm, sweet and relaxed harmony, with tenderness toward love in a broad sense: a person, friendship, family, a place or a remembered time. A little wistfulness is welcome, while the music still feels safe and open. These are musical possibilities to explore, not fixed meanings attached to chords.",
+  "provenance": "Eight original educational patterns. These are not transcriptions of any song. MIDI notes specify suggested accompaniment voicings, with the bass first; they are starting points for composition and editing.",
+  "entries": [
+    {
+      "id": "tenderness-study",
+      "title": "Tenderness Study",
+      "summary": "A settled opening, a brief increase in longing, and a small ache before coming home.",
+      "moods": [
+        "warm",
+        "tender",
+        "relaxed",
+        "wistful"
+      ],
+      "key": "F",
+      "mode": "major",
+      "tempo": 76,
+      "meter": [
+        4,
+        4
+      ],
+      "analysis": "The first eight bars stay within F major. A descending bass makes the phrase feel continuous, and the suspended dominant delays its third until the end of bar 8. The second half introduces A7 and G7 as brief secondary dominants: they point toward D minor and C without establishing lasting new keys. In bars 13-16, Fmaj7 becomes F7 and resolves to Bbmaj7; Bb then changes to borrowed Bb minor before returning to F. The suggested upper voicings trace E-Eb-D-Db-C while retaining the pitch F. That mixture of continuity and a small chromatic descent can support tenderness with a little regret, especially when played softly and with space.",
+      "voiceLeading": [
+        "Bars 1-7: the bass walks F-E-D-C-Bb-A-G, then returns to C for the dominant.",
+        "Bar 8: the suspended F falls to E inside C7; that E can remain as the major seventh of the following Fmaj7.",
+        "A7 to Dm7: C# rises to D and G can fall to F.",
+        "G7 to C7: B rises to C while F falls to E.",
+        "Bars 13-16: the upper line E-Eb-D-Db-C descends over Fmaj7-F7-Bbmaj7-Bbm6-Fadd9. F is a common pitch throughout."
+      ],
+      "useWhen": "A complete verse-sized sketch, or a starting point for a quiet song about care, closeness or memory.",
+      "compositionTips": [
+        "Keep the melody simple over bars 1-8, then give one longer note to the more colourful final phrase.",
+        "For a less insistent second half, try Am7 in place of A7, or Gm7-C7 in place of G7-C7.",
+        "Leave the final Fadd9 spacious. Its G can remain as colour rather than being forced down to F.",
+        "Try gentle broken chords or light sustained voicings; the suggested notes are not a fixed accompaniment rhythm."
+      ],
+      "noteGuide": {
+        "diatonic": [
+          "F",
+          "G",
+          "A",
+          "Bb",
+          "C",
+          "D",
+          "E"
+        ],
+        "chromatic": [
+          {
+            "note": "C#",
+            "role": "The third of A7, leading upward to D in Dm7."
+          },
+          {
+            "note": "B",
+            "role": "The third of G7, leading upward to C."
+          },
+          {
+            "note": "Eb",
+            "role": "The seventh of F7, tending downward to D in Bbmaj7."
+          },
+          {
+            "note": "Db",
+            "role": "The minor third of Bbm6, tending downward to C at the final F chord. It shares a piano key with C#, but has a different harmonic role here."
+          }
+        ]
+      },
+      "bars": [
+        {
+          "chords": [
+            {
+              "symbol": "Fmaj7",
+              "beats": 4,
+              "notes": [
+                53,
+                57,
+                60,
+                64
+              ],
+              "roman": "Imaj7",
+              "comment": "Establish F major with a soft major-seventh colour."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "C/E",
+              "beats": 4,
+              "notes": [
+                52,
+                55,
+                60,
+                64
+              ],
+              "roman": "V6",
+              "comment": "The E bass continues the stepwise descent."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "Dm7",
+              "beats": 4,
+              "notes": [
+                50,
+                57,
+                60,
+                65
+              ],
+              "roman": "vi7",
+              "comment": "The relative-minor chord adds shade within the home key."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "Fmaj7/C",
+              "beats": 4,
+              "notes": [
+                48,
+                53,
+                57,
+                64
+              ],
+              "roman": "Imaj7 (5 in bass)",
+              "comment": "Tonic harmony continues while the bass reaches C."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "Bbmaj7",
+              "beats": 4,
+              "notes": [
+                46,
+                53,
+                57,
+                62
+              ],
+              "roman": "IVmaj7",
+              "comment": "Open the phrase toward the subdominant."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "F/A",
+              "beats": 4,
+              "notes": [
+                45,
+                53,
+                57,
+                60
+              ],
+              "roman": "I6",
+              "comment": "A tonic inversion keeps the bass moving gently."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "Gm7",
+              "beats": 4,
+              "notes": [
+                43,
+                53,
+                58,
+                62
+              ],
+              "roman": "ii7",
+              "comment": "Prepare the dominant without leaving the key."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "C7sus4",
+              "beats": 2,
+              "notes": [
+                48,
+                55,
+                58,
+                65
+              ],
+              "roman": "V7sus4",
+              "comment": "Hold F where the dominant's third would usually be."
+            },
+            {
+              "symbol": "C7",
+              "beats": 2,
+              "notes": [
+                48,
+                55,
+                58,
+                64
+              ],
+              "roman": "V7",
+              "comment": "Let F fall to E before returning home."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "Fmaj7",
+              "beats": 4,
+              "notes": [
+                41,
+                53,
+                57,
+                60,
+                64
+              ],
+              "roman": "Imaj7",
+              "comment": "A lower F bass gives this return a little more weight."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "A7",
+              "beats": 4,
+              "notes": [
+                45,
+                52,
+                55,
+                61
+              ],
+              "roman": "V7/vi",
+              "comment": "C# gently draws the harmony toward D minor."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "Dm7",
+              "beats": 4,
+              "notes": [
+                50,
+                53,
+                57,
+                60,
+                62
+              ],
+              "roman": "vi7",
+              "comment": "Allow the minor arrival to breathe."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "G7",
+              "beats": 2,
+              "notes": [
+                43,
+                55,
+                59,
+                65
+              ],
+              "roman": "V7/V",
+              "comment": "B-natural increases the pull toward C."
+            },
+            {
+              "symbol": "C7",
+              "beats": 2,
+              "notes": [
+                48,
+                58,
+                60,
+                64
+              ],
+              "roman": "V7",
+              "comment": "B rises to C and F falls to E."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "Fmaj7",
+              "beats": 2,
+              "notes": [
+                41,
+                53,
+                57,
+                60,
+                64
+              ],
+              "roman": "Imaj7",
+              "comment": "Return to F, with E at the top."
+            },
+            {
+              "symbol": "F7",
+              "beats": 2,
+              "notes": [
+                41,
+                53,
+                57,
+                60,
+                63
+              ],
+              "roman": "V7/IV",
+              "comment": "Lower E to Eb; F becomes a way of reaching Bb."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "Bbmaj7",
+              "beats": 4,
+              "notes": [
+                46,
+                53,
+                57,
+                62
+              ],
+              "roman": "IVmaj7",
+              "comment": "The upper Eb resolves to D."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "Bbm6",
+              "beats": 4,
+              "notes": [
+                46,
+                53,
+                55,
+                61
+              ],
+              "roman": "iv(add6)",
+              "comment": "Borrow Db from F minor; G is an added sixth above Bb."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "Fadd9",
+              "beats": 4,
+              "notes": [
+                41,
+                53,
+                55,
+                57,
+                60
+              ],
+              "roman": "I(add9)",
+              "comment": "Db falls to C, with F and G remaining as common pitches."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "walking-beside-you",
+      "title": "Walking Beside You",
+      "summary": "An unhurried descending bass supports a changing but familiar view above it.",
+      "moods": [
+        "relaxed",
+        "warm",
+        "steady",
+        "tender"
+      ],
+      "key": "F",
+      "mode": "major",
+      "tempo": 76,
+      "meter": [
+        4,
+        4
+      ],
+      "analysis": "This eight-bar diatonic pattern concentrates on the opening gesture of Tenderness Study. The bass descends through the F-major scale from F to G, then moves to C to prepare the return. Inversions do most of the work: a new bass note does not always require a new chord root. With a modest melody and even pacing, that continuity can suggest companionship or ordinary affection, without requiring a dramatic harmonic event.",
+      "voiceLeading": [
+        "The bass is F-E-D-C-Bb-A-G-C.",
+        "Fmaj7 and C/E retain C and E while their bass notes move by a semitone.",
+        "Bbmaj7 and F/A share F and A; the bass moves Bb-A.",
+        "Gm7 and C7sus4 share G, Bb and F, making the approach to the dominant especially connected."
+      ],
+      "useWhen": "A relaxed verse, a quiet opening, or accompaniment beneath a conversational melody.",
+      "compositionTips": [
+        "Let the bass make the journey; the melody can repeat a small idea instead of changing constantly.",
+        "Try one bass note per bar and a lightly rolling upper chord.",
+        "Keep the first seven chords at similar volume so the descending line feels continuous."
+      ],
+      "noteGuide": {
+        "diatonic": [
+          "F",
+          "G",
+          "A",
+          "Bb",
+          "C",
+          "D",
+          "E"
+        ],
+        "chromatic": []
+      },
+      "bars": [
+        {
+          "chords": [
+            {
+              "symbol": "Fmaj7",
+              "beats": 4,
+              "notes": [
+                53,
+                57,
+                60,
+                64
+              ],
+              "roman": "Imaj7",
+              "comment": "Begin with F in the bass."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "C/E",
+              "beats": 4,
+              "notes": [
+                52,
+                55,
+                60,
+                64
+              ],
+              "roman": "V6",
+              "comment": "Move the bass down to E."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "Dm7",
+              "beats": 4,
+              "notes": [
+                50,
+                57,
+                60,
+                65
+              ],
+              "roman": "vi7",
+              "comment": "Continue down to D with a relative-minor shade."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "Fmaj7/C",
+              "beats": 4,
+              "notes": [
+                48,
+                53,
+                57,
+                64
+              ],
+              "roman": "Imaj7 (5 in bass)",
+              "comment": "The bass reaches C beneath tonic harmony."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "Bbmaj7",
+              "beats": 4,
+              "notes": [
+                46,
+                53,
+                57,
+                62
+              ],
+              "roman": "IVmaj7",
+              "comment": "Bb continues the descent."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "F/A",
+              "beats": 4,
+              "notes": [
+                45,
+                53,
+                57,
+                60
+              ],
+              "roman": "I6",
+              "comment": "A is a connecting bass note within a tonic inversion."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "Gm7",
+              "beats": 4,
+              "notes": [
+                43,
+                53,
+                58,
+                62
+              ],
+              "roman": "ii7",
+              "comment": "The descending line arrives at G."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "C7sus4",
+              "beats": 2,
+              "notes": [
+                48,
+                55,
+                58,
+                65
+              ],
+              "roman": "V7sus4",
+              "comment": "C prepares another pass through the pattern."
+            },
+            {
+              "symbol": "C7",
+              "beats": 2,
+              "notes": [
+                48,
+                55,
+                58,
+                64
+              ],
+              "roman": "V7",
+              "comment": "F falls to E before the loop returns to Fmaj7."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a-small-ache",
+      "title": "A Small Ache",
+      "summary": "One borrowed minor chord colours an otherwise reassuring return home.",
+      "moods": [
+        "tender",
+        "wistful",
+        "warm",
+        "reflective"
+      ],
+      "key": "F",
+      "mode": "major",
+      "tempo": 76,
+      "meter": [
+        4,
+        4
+      ],
+      "analysis": "Bbmaj7 changes to Bbm6 before resolving to F. The borrowed minor-subdominant introduces Db, a semitone below the preceding D. Its added sixth is G, which can remain in the final F chord as the ninth. The suggested upper line D-Db-C gives a compact, audible reason for the bittersweet effect. This can support affection mixed with awareness of distance or passing time; the melody and performance decide how strongly that feeling comes across.",
+      "voiceLeading": [
+        "The upper line descends D-Db-C across Bbmaj7-Bbm6-Fadd9.",
+        "F remains a common pitch across all four bars.",
+        "G in Bbm6 stays as the ninth of Fadd9.",
+        "The last bar adds D as a sixth above F, keeping the settled ending slightly open."
+      ],
+      "useWhen": "The end of a verse or chorus, a remembered image, or a gentle closing phrase.",
+      "compositionTips": [
+        "Use the borrowed minor chord once at the end of a phrase if you want only a small amount of sorrow.",
+        "A melody holding F or G lets the inner D-Db-C movement provide the change of colour.",
+        "Give the two tonic bars room to settle rather than adding another dominant immediately."
+      ],
+      "noteGuide": {
+        "diatonic": [
+          "F",
+          "G",
+          "A",
+          "Bb",
+          "C",
+          "D",
+          "E"
+        ],
+        "chromatic": [
+          {
+            "note": "Db",
+            "role": "The minor third of Bbm6, borrowed from F minor and resolving naturally downward to C."
+          }
+        ]
+      },
+      "bars": [
+        {
+          "chords": [
+            {
+              "symbol": "Bbmaj7",
+              "beats": 4,
+              "notes": [
+                46,
+                53,
+                57,
+                62
+              ],
+              "roman": "IVmaj7",
+              "comment": "D at the top establishes the major-subdominant colour."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "Bbm6",
+              "beats": 4,
+              "notes": [
+                46,
+                53,
+                55,
+                61
+              ],
+              "roman": "iv(add6)",
+              "comment": "Lower D to Db while retaining F."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "Fadd9",
+              "beats": 4,
+              "notes": [
+                41,
+                53,
+                55,
+                57,
+                60
+              ],
+              "roman": "I(add9)",
+              "comment": "Db falls to C; G can remain as a gentle ninth."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "F6/9",
+              "beats": 4,
+              "notes": [
+                41,
+                53,
+                57,
+                60,
+                62,
+                67
+              ],
+              "roman": "I(add6,9)",
+              "comment": "Extend the tonic arrival with D and G rather than a new harmonic destination."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "room-to-breathe",
+      "title": "Room to Breathe",
+      "summary": "A suspended dominant lets a phrase linger before its return.",
+      "moods": [
+        "relaxed",
+        "tender",
+        "patient",
+        "open"
+      ],
+      "key": "F",
+      "mode": "major",
+      "tempo": 76,
+      "meter": [
+        4,
+        4
+      ],
+      "analysis": "Gm7 leads to C7sus4, but the dominant initially contains F instead of its usual third E. The change to C7 releases that suspension through F-E. At the following Fmaj7, E remains as the tonic's major seventh, so the bass arrives home while one upper colour continues. This is useful when a phrase should feel complete enough to rest but still leave room for another thought.",
+      "voiceLeading": [
+        "The top F in C7sus4 falls by a semitone to E in C7.",
+        "That E stays at the top of Fmaj7 while the bass moves C-F.",
+        "Bb in the dominant can fall to A in the tonic.",
+        "The added G in the opening Fadd9 gives a spacious starting colour."
+      ],
+      "useWhen": "A gentle question-and-answer phrase, a refrain that should linger, or a quiet pause between lines.",
+      "compositionTips": [
+        "Hold the suspension a little longer than the resolution when you want a more lingering cadence.",
+        "Keep the melody on F over C7sus4, then try E over both C7 and Fmaj7.",
+        "Avoid filling every gap with a new note; the delayed movement is the main event."
+      ],
+      "noteGuide": {
+        "diatonic": [
+          "F",
+          "G",
+          "A",
+          "Bb",
+          "C",
+          "D",
+          "E"
+        ],
+        "chromatic": []
+      },
+      "bars": [
+        {
+          "chords": [
+            {
+              "symbol": "Fadd9",
+              "beats": 4,
+              "notes": [
+                41,
+                53,
+                57,
+                60,
+                67
+              ],
+              "roman": "I(add9)",
+              "comment": "A spacious tonic opening."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "Gm7",
+              "beats": 4,
+              "notes": [
+                43,
+                53,
+                58,
+                62,
+                65
+              ],
+              "roman": "ii7",
+              "comment": "Prepare the dominant with F already in the upper voice."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "C7sus4",
+              "beats": 3,
+              "notes": [
+                48,
+                55,
+                58,
+                60,
+                65
+              ],
+              "roman": "V7sus4",
+              "comment": "Let the suspended F linger for three beats."
+            },
+            {
+              "symbol": "C7",
+              "beats": 1,
+              "notes": [
+                48,
+                55,
+                58,
+                60,
+                64
+              ],
+              "roman": "V7",
+              "comment": "Release F to E just before the tonic."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "Fmaj7",
+              "beats": 4,
+              "notes": [
+                41,
+                53,
+                57,
+                60,
+                64
+              ],
+              "roman": "Imaj7",
+              "comment": "The bass arrives home while E remains as colour."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "letting-the-guard-down",
+      "title": "Letting the Guard Down",
+      "summary": "A brief secondary dominant makes the relative-minor arrival more intimate and directed.",
+      "moods": [
+        "tender",
+        "vulnerable",
+        "wistful",
+        "reassuring"
+      ],
+      "key": "F",
+      "mode": "major",
+      "tempo": 76,
+      "meter": [
+        4,
+        4
+      ],
+      "analysis": "A7 contains C#, which is outside F major and acts as a leading tone to D. It gives the move into Dm7 a clearer pull than the diatonic Am7 would. The return to Fadd9 then restores the major-key setting. This is a short tonicization of the relative minor, not a full change of key. Played without a large dynamic swell, it can add a moment of vulnerability while preserving the phrase's calm character.",
+      "voiceLeading": [
+        "C# in A7 rises by a semitone to D in Dm7.",
+        "G in A7 falls to F in Dm7.",
+        "Dm7 and Fadd9 share F, A and C, connecting the minor moment with the return to major."
+      ],
+      "useWhen": "One more personal line in an otherwise relaxed verse, or a brief reflective turn before a reassuring answer.",
+      "compositionTips": [
+        "Keep A7 soft; the altered note already supplies direction.",
+        "A melody moving C#-D makes the secondary dominant easy to hear.",
+        "Replace A7 with Am7 when you want less tension and a more entirely diatonic version."
+      ],
+      "noteGuide": {
+        "diatonic": [
+          "F",
+          "G",
+          "A",
+          "Bb",
+          "C",
+          "D",
+          "E"
+        ],
+        "chromatic": [
+          {
+            "note": "C#",
+            "role": "The third of A7 and a temporary leading tone to D."
+          }
+        ]
+      },
+      "bars": [
+        {
+          "chords": [
+            {
+              "symbol": "Fmaj7",
+              "beats": 4,
+              "notes": [
+                41,
+                53,
+                57,
+                60,
+                64
+              ],
+              "roman": "Imaj7",
+              "comment": "Begin in the stable major-key setting."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "A7",
+              "beats": 4,
+              "notes": [
+                45,
+                52,
+                55,
+                61
+              ],
+              "roman": "V7/vi",
+              "comment": "The C# points toward D minor."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "Dm7",
+              "beats": 4,
+              "notes": [
+                50,
+                53,
+                57,
+                60,
+                62
+              ],
+              "roman": "vi7",
+              "comment": "C# rises to D and G falls to F in the suggested voicing."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "Fadd9",
+              "beats": 4,
+              "notes": [
+                41,
+                53,
+                57,
+                60,
+                67
+              ],
+              "roman": "I(add9)",
+              "comment": "Shared F-A-C notes connect the return to the major tonic."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "easy-conversation",
+      "title": "Easy Conversation",
+      "summary": "A familiar ii-V-I cadence with shared upper colours and a light tonic ending.",
+      "moods": [
+        "warm",
+        "relaxed",
+        "conversational",
+        "open"
+      ],
+      "key": "F",
+      "mode": "major",
+      "tempo": 76,
+      "meter": [
+        4,
+        4
+      ],
+      "analysis": "After the opening tonic, Gm7-C9-F6/9 gives a diatonic ii-V-I in F. The dominant's E and Bb resolve toward F and A, while D and G can remain as colour on the final tonic. The ending has a sixth and ninth instead of a major seventh. A full F6/9 contains F-A-C-D-G; this lighter voicing leaves out C and doubles F. In this voicing it can feel settled and lightly buoyant, making it useful when the melody should carry the personal meaning and the harmony should flow easily beneath it.",
+      "voiceLeading": [
+        "Gm7 and C9 share Bb and D in these voicings.",
+        "E in C9 rises to F, while Bb falls to A in F6/9.",
+        "D and G remain in the final chord as the sixth and ninth above F.",
+        "The final played notes are F2-F3-A3-D4-G4. C, the fifth of F, is deliberately omitted; the root, third, sixth and ninth still identify the F6/9 colour. Omitting the fifth does not change the chord symbol."
+      ],
+      "useWhen": "A low-key refrain, a relaxed instrumental passage, or a simple verse ending that should not sound final and heavy.",
+      "compositionTips": [
+        "Try a short melodic phrase followed by a small rest, as though leaving space in a conversation.",
+        "Let D or G continue from the dominant into the tonic if you want a connected upper line.",
+        "Use a plain F chord at the end when you want a firmer, less coloured arrival."
+      ],
+      "noteGuide": {
+        "diatonic": [
+          "F",
+          "G",
+          "A",
+          "Bb",
+          "C",
+          "D",
+          "E"
+        ],
+        "chromatic": []
+      },
+      "bars": [
+        {
+          "chords": [
+            {
+              "symbol": "Fmaj7",
+              "beats": 4,
+              "notes": [
+                41,
+                53,
+                57,
+                60,
+                64
+              ],
+              "roman": "Imaj7",
+              "comment": "Establish the home key."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "Gm7",
+              "beats": 4,
+              "notes": [
+                43,
+                53,
+                58,
+                62
+              ],
+              "roman": "ii7",
+              "comment": "A familiar predominant beginning to the cadence."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "C9",
+              "beats": 4,
+              "notes": [
+                48,
+                52,
+                58,
+                62,
+                67
+              ],
+              "roman": "V9",
+              "comment": "The ninth D joins the dominant's E and Bb."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "F6/9",
+              "beats": 4,
+              "notes": [
+                41,
+                53,
+                57,
+                62,
+                67
+              ],
+              "roman": "I(add6,9)",
+              "comment": "E3 rises to F3 and Bb3 falls to A3, while D4 and G4 remain. This F6/9 voicing deliberately omits C, the fifth."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "making-room",
+      "title": "Making Room",
+      "summary": "A short ii-V toward the subdominant makes Bb feel like a local place to rest.",
+      "moods": [
+        "warm",
+        "open",
+        "tender",
+        "expansive"
+      ],
+      "key": "F",
+      "mode": "major",
+      "tempo": 76,
+      "meter": [
+        4,
+        4
+      ],
+      "analysis": "Cm7-F7-Bbmaj7 forms a temporary ii-V-I in Bb, which is IV in the home key of F. Eb is the new note that makes this local destination possible. The following F/A reconnects the phrase with the home tonic through a gentle bass step Bb-A. This brief tonicization can make a phrase feel as though it opens outward, especially if the melody becomes a little more spacious over Bb. It does not by itself establish a lasting modulation.",
+      "voiceLeading": [
+        "Cm7 and F7 share Eb, which acts first as a chord third and then as a dominant seventh.",
+        "Eb in F7 falls to D in Bbmaj7.",
+        "A can remain from F7 into Bbmaj7 as the latter chord's major seventh.",
+        "The bass steps Bb-A when Bbmaj7 moves to F/A."
+      ],
+      "useWhen": "A chorus opening, a brief expansion of a verse, or a melodic line about giving space or offering care.",
+      "compositionTips": [
+        "Allow Bbmaj7 a whole bar after the shorter Cm7-F7 preparation.",
+        "A melody E-Eb-D across the opening Fmaj7, the secondary ii-V, and Bbmaj7 makes the colour change clear.",
+        "Return through F/A for a gentle continuation, or use Gm7-C7-F for a more definite return home."
+      ],
+      "noteGuide": {
+        "diatonic": [
+          "F",
+          "G",
+          "A",
+          "Bb",
+          "C",
+          "D",
+          "E"
+        ],
+        "chromatic": [
+          {
+            "note": "Eb",
+            "role": "The minor third of Cm7 and the seventh of F7, resolving toward D at Bbmaj7."
+          }
+        ]
+      },
+      "bars": [
+        {
+          "chords": [
+            {
+              "symbol": "Fmaj7",
+              "beats": 4,
+              "notes": [
+                41,
+                53,
+                57,
+                60,
+                64
+              ],
+              "roman": "Imaj7",
+              "comment": "Begin at home with E in the upper voice."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "Cm7",
+              "beats": 2,
+              "notes": [
+                48,
+                55,
+                58,
+                63
+              ],
+              "roman": "ii7/IV",
+              "comment": "Eb introduces the local key of Bb."
+            },
+            {
+              "symbol": "F7",
+              "beats": 2,
+              "notes": [
+                41,
+                53,
+                57,
+                60,
+                63
+              ],
+              "roman": "V7/IV",
+              "comment": "Retain Eb while directing the harmony toward Bb."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "Bbmaj7",
+              "beats": 4,
+              "notes": [
+                46,
+                53,
+                57,
+                62
+              ],
+              "roman": "IVmaj7",
+              "comment": "Eb resolves to D at the local arrival."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "F/A",
+              "beats": 4,
+              "notes": [
+                45,
+                53,
+                57,
+                60
+              ],
+              "roman": "I6",
+              "comment": "Return to tonic harmony with a connecting A bass."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gentle-momentum",
+      "title": "Gentle Momentum",
+      "summary": "One chromatic leading tone gives a calm phrase a clearer sense of direction.",
+      "moods": [
+        "relaxed",
+        "hopeful",
+        "warm",
+        "forward-moving"
+      ],
+      "key": "F",
+      "mode": "major",
+      "tempo": 76,
+      "meter": [
+        4,
+        4
+      ],
+      "analysis": "G7 replaces the diatonic Gm7 and becomes V7/V: a dominant aimed at C. Its B-natural creates a semitone pull to C, after which C7 leads back to F. The suspended form of C7 delays E for half a bar, balancing the increased direction with a little lingering space. Two tonic bars at the end let the phrase settle. This can provide a quiet lift without needing a louder accompaniment or a dramatic key change.",
+      "voiceLeading": [
+        "Changing Gm7 to G7 raises Bb to B, giving the next C chord a clearer pull.",
+        "The suggested G7 has B3 and F4; at C7sus4, B rises to C while F remains suspended.",
+        "C7sus4 to C7 moves the top F to E.",
+        "The final tonic bars retain F-A-C while changing their added upper colour."
+      ],
+      "useWhen": "A short build into a refrain, the second half of a verse, or a phrase that needs movement while staying gentle.",
+      "compositionTips": [
+        "Keep the dynamics even so the altered B-natural, rather than extra volume, creates the lift.",
+        "If the phrase feels too directed, change G7 back to Gm7.",
+        "Use the final two tonic bars for a held melody note or a breath before starting again."
+      ],
+      "noteGuide": {
+        "diatonic": [
+          "F",
+          "G",
+          "A",
+          "Bb",
+          "C",
+          "D",
+          "E"
+        ],
+        "chromatic": [
+          {
+            "note": "B",
+            "role": "The major third of G7 and a temporary leading tone to C."
+          }
+        ]
+      },
+      "bars": [
+        {
+          "chords": [
+            {
+              "symbol": "Fmaj7",
+              "beats": 4,
+              "notes": [
+                41,
+                53,
+                57,
+                60,
+                64
+              ],
+              "roman": "Imaj7",
+              "comment": "A calm tonic opening."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "Dm7",
+              "beats": 4,
+              "notes": [
+                50,
+                53,
+                57,
+                60,
+                62
+              ],
+              "roman": "vi7",
+              "comment": "Move through the relative minor before increasing direction."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "G7",
+              "beats": 4,
+              "notes": [
+                43,
+                55,
+                59,
+                65
+              ],
+              "roman": "V7/V",
+              "comment": "B-natural points toward C."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "C7sus4",
+              "beats": 2,
+              "notes": [
+                48,
+                58,
+                60,
+                65
+              ],
+              "roman": "V7sus4",
+              "comment": "B rises to C while the top F is held."
+            },
+            {
+              "symbol": "C7",
+              "beats": 2,
+              "notes": [
+                48,
+                58,
+                60,
+                64
+              ],
+              "roman": "V7",
+              "comment": "F falls to E, preparing the return to F."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "Fmaj7",
+              "beats": 4,
+              "notes": [
+                41,
+                53,
+                57,
+                60,
+                64
+              ],
+              "roman": "Imaj7",
+              "comment": "Resolve the bass to F while retaining E as colour."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "Fadd9",
+              "beats": 4,
+              "notes": [
+                41,
+                53,
+                57,
+                60,
+                67
+              ],
+              "roman": "I(add9)",
+              "comment": "Give the tonic another bar with a more open G above it."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "contentCorrections": [
+    {
+      "entryId": "easy-conversation",
+      "path": [
+        "analysis"
+      ],
+      "oldValue": "After the opening tonic, Gm7-C9-F6/9 gives a diatonic ii-V-I in F. The dominant's E and Bb resolve toward F and A, while D and G can remain as colour on the final tonic. The ending has a sixth and ninth instead of a major seventh. In this voicing it can feel settled and lightly buoyant, making it useful when the melody should carry the personal meaning and the harmony should flow easily beneath it.",
+      "newValue": "After the opening tonic, Gm7-C9-F6/9 gives a diatonic ii-V-I in F. The dominant's E and Bb resolve toward F and A, while D and G can remain as colour on the final tonic. The ending has a sixth and ninth instead of a major seventh. A full F6/9 contains F-A-C-D-G; this lighter voicing leaves out C and doubles F. In this voicing it can feel settled and lightly buoyant, making it useful when the melody should carry the personal meaning and the harmony should flow easily beneath it."
+    },
+    {
+      "entryId": "easy-conversation",
+      "path": [
+        "voiceLeading",
+        3
+      ],
+      "oldValue": "The final voicing omits C, the fifth; the root, third, sixth and ninth establish its colour.",
+      "newValue": "The final played notes are F2-F3-A3-D4-G4. C, the fifth of F, is deliberately omitted; the root, third, sixth and ninth still identify the F6/9 colour. Omitting the fifth does not change the chord symbol."
+    },
+    {
+      "entryId": "easy-conversation",
+      "path": [
+        "bars",
+        3,
+        "chords",
+        0,
+        "comment"
+      ],
+      "oldValue": "E-F and Bb-A resolve while D and G remain.",
+      "newValue": "E3 rises to F3 and Bb3 falls to A3, while D4 and G4 remain. This F6/9 voicing deliberately omits C, the fifth."
+    }
+  ]
+}

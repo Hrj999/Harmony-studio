@@ -1,0 +1,12 @@
+{
+  "name": "harmony-studio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A portable music notebook for whole-song analysis and harmony experiments.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test",
+    "start": "node scripts/serve.mjs"
+  },
+  "engines": { "node": ">=20" }
+}
