@@ -2,6 +2,11 @@ HARMONY STUDIO
 
 Double-click index.html. That single file contains the complete app.
 
+Open the Song Atlas song picker to choose 金莎’s 着迷 or Crowd Lu’s
+刻在我心底的名字. Both songs appear in the same picker, including after upgrading.
+The study uses the 5:43 music-video clock. The recording link and analysis
+method are in the song overview.
+
 Song Atlas and Phrase Lab now share one collection and one backup button.
 Choose Back up everything to move the collection between browsers or computers.
 Import backup accepts the combined backup or either of your earlier app backups.
@@ -12,8 +17,7 @@ TO UPLOAD TO YOUR GITHUB REPOSITORY
 3. Upload the CONTENTS of this folder, with index.html at the repository root.
 4. Commit the upload. There is no installation or build step for you to run.
 
-To make it a website, choose Settings > Pages > Deploy from a branch, then your
-branch and / (root). See README.md for the optional source-build workflow.
+The existing GitHub Pages project serves the prebuilt index.html at the root.
 
 Your personal browser collection is not in this ZIP. Keep your JSON backup.
 The full song recording is not bundled; choose local audio in Song Atlas.

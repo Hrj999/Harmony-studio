@@ -14,4 +14,8 @@ main{max-width:none;padding:0;margin:0}
 .view-intro h2{font-size:28px;letter-spacing:-.015em}
 .view-intro p:last-child{font-size:14px;max-width:720px;margin-bottom:0}
 .legacy-controls{display:none!important}
+.tension-note{max-width:800px;margin:12px 0 0;padding:10px 14px;border-left:3px solid var(--gold);background:var(--soft);font-size:14px}
+#tension .tension-peak{fill:var(--accent);font-size:14px;font-weight:700}
+.playback-key{display:inline-flex;align-items:center;flex-wrap:wrap;gap:8px;font-size:13px;font-weight:500}
+.playback-key select{width:auto}
 @media(max-width:680px){main{padding:0}.view-intro h2{font-size:24px}.view-intro{padding:0 0 18px}}

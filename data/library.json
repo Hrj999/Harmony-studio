@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "title": "My Harmony Dictionary",
   "personalProfile": "Warm, sweet and relaxed harmony, with tenderness toward love in a broad sense: a person, friendship, family, a place or a remembered time. A little wistfulness is welcome, while the music still feels safe and open. These are musical possibilities to explore, not fixed meanings attached to chords.",
-  "provenance": "Eight original educational patterns. These are not transcriptions of any song. MIDI notes specify suggested accompaniment voicings, with the bass first; they are starting points for composition and editing.",
+  "provenance": "The library includes educational patterns and studies drawn from songs. Tenderness Study grew from the introduction of 着迷. Longing Study follows the first chorus of 刻在我心底的名字. Playback uses suggested accompaniment voicings, with the bass first.",
   "entries": [
     {
       "id": "tenderness-study",
@@ -362,6 +362,107 @@
               "comment": "Db falls to C, with F and G remaining as common pitches."
             }
           ]
+        }
+      ]
+    },
+    {
+      "id": "engraved-name-chorus-study",
+      "title": "Longing Study",
+      "summary": "The first chorus of 刻在我心底的名字. B♭ feels like home, then a single rising note draws the phrase into G minor.",
+      "moods": ["tender", "longing", "wistful"],
+      "key": "Bb",
+      "mode": "major",
+      "tempo": 67,
+      "meter": [4, 4],
+      "analysis": "The chorus starts on its home chord, B♭. D7 shares D with B♭, while its F♯ gives the harmony a new direction. When F♯ rises to G and C relaxes down to B♭, G minor feels like a place to land. The first three bars carry the heart of the phrase. The E in the last bar gives it a second impulse, this time toward F.\n\nThe bass movement and the D7–G-minor turn guided the reading from the recording. The seventh in Gm7 and the exact C-family chord over E are less certain. The playback voicing brings the half-step motion to the surface. Its top line is an accompaniment exercise.",
+      "voiceLeading": [
+        "Bars 1–3. Follow the highest notes of this voicing, F–F♯–G. They climb two half steps while D stays in the same register.",
+        "Bars 2–3. In D7, C (the seventh) can fall to B♭ in G minor while F♯ rises to G. One voice relaxes as the other reaches.",
+        "Bar 4. The bass moves to E and the top G stays. Hear how the new bass puts the phrase back in motion."
+      ],
+      "useWhen": "Try this when a melody starts from a familiar place and you want its next arrival to feel like a quiet reach toward something.",
+      "compositionTips": [
+        "Select D7 in bar 2 and change it to Dm7. Use Hear original pattern and Hear experiment to compare what happens when only F♯ falls to F.",
+        "Try Gm in bar 3 or C/E in bar 4, one at a time. The approach to G remains clear even when you simplify the recording’s less certain colours.",
+        "Compare bars 10–11 of Tenderness Study. A7 leads into Dm7 there, with C♯ rising to D just as F♯ rises to G here."
+      ],
+      "noteGuide": {
+        "diatonic": ["Bb", "C", "D", "Eb", "F", "G", "A"],
+        "chromatic": [
+          {"note": "F#", "role": "The third of D7. It rises by a half step to G, the root of the next chord."},
+          {"note": "E", "role": "The bass and third of the proposed C7/E. It points a half step up to F."}
+        ]
+      },
+      "bars": [
+        {
+          "chords": [
+            {
+              "symbol": "Bb",
+              "beats": 4,
+              "notes": [46, 58, 62, 65],
+              "roman": "I",
+              "comment": "Start with F at the top and D just below. Keep the D in place for the next two bars."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "D7",
+              "beats": 4,
+              "notes": [50, 57, 60, 62, 66],
+              "roman": "V7/vi",
+              "comment": "The top F moves to F♯. D stays in the same register, while C and F♯ give the chord its pull toward G minor."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "Gm7",
+              "beats": 4,
+              "notes": [43, 58, 62, 65, 67],
+              "roman": "vi7",
+              "uncertain": true,
+              "alternatives": ["Gm"],
+              "comment": "F♯ has reached G. The G-minor arrival is clearer in the recording than the added seventh. Compare plain Gm."
+            }
+          ]
+        },
+        {
+          "chords": [
+            {
+              "symbol": "C7/E",
+              "beats": 4,
+              "notes": [52, 58, 60, 67],
+              "roman": "V7/V (scale degree ♯4 in bass)",
+              "uncertain": true,
+              "alternatives": ["C/E"],
+              "comment": "The top G stays while the bass moves to E. The C-family colour points toward F. Compare C/E if you hear it without the seventh."
+            }
+          ]
+        }
+      ],
+      "sourceSong": {
+        "songId": "engraved-name-crowd-lu",
+        "sectionId": "chorus-one",
+        "title": "刻在我心底的名字",
+        "artist": "盧廣仲 · Crowd Lu",
+        "sectionName": "First chorus · D7 to G minor",
+        "fromBar": 1,
+        "toBar": 4,
+        "startSeconds": 117.84,
+        "endSeconds": 132.1684,
+        "evidence": "Working harmonic reduction with arranged voicings"
+      },
+      "listeningExamples": [
+        {
+          "id": "engraved-name-chorus-mv",
+          "title": "刻在我心底的名字",
+          "artist": "盧廣仲 · Crowd Lu",
+          "url": "https://www.bilibili.com/video/BV1nj411T7sT/",
+          "location": "Music video · first chorus around 1:58–2:12, return around 3:36",
+          "note": "Listen through about 2:01–2:08 for D7 giving way to G minor. At the second chorus, hear what the fuller backing adds to the same harmonic pull."
         }
       ]
     },

@@ -1,6 +1,6 @@
 (()=>{'use strict';
 const A=window.AtlasCore,H=window.HarmonyCore,$=id=>document.getElementById(id),KEY='my-song-atlas-v1';
-let state={version:1,songs:structuredClone(ATLAS_SEED.songs),notes:{},selectedId:ATLAS_SEED.songs[0].id,sections:{}},song,section,selectedChord=null,editingSection=null,editingSong=false,recordingSongId=null,audioUrl=null,context=null,nodes=[],bus=null,raf=0,playing=null,generation=0,pendingVariation=null;
+let state={version:1,songs:structuredClone(ATLAS_SEED.songs),notes:{},selectedId:ATLAS_SEED.songs[0].id,sections:{}},song,section,targetKey,selectedChord=null,editingSection=null,editingSong=false,recordingSongId=null,audioUrl=null,context=null,nodes=[],bus=null,raf=0,playing=null,generation=0,pendingVariation=null;
 function tell(t){$('notice').textContent=t;}
 function save(){try{localStorage.setItem(KEY,JSON.stringify({...state,updatedAt:new Date().toISOString()}));return true;}catch(e){tell('This browser cannot save your changes. Use Back up collection before closing.');return false;}}
 function el(tag,cls,text){const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n;}
@@ -9,21 +9,148 @@ function safeLink(raw){try{const u=new URL(raw);return ['https:','http:'].includ
 function checkState(d){if(!d||!Array.isArray(d.songs)||!d.songs.length||d.songs.length>100)throw Error('Choose an atlas backup containing 1–100 songs.');const ids=new Set();d.songs.forEach(s=>{A.validateSong(s);if(ids.has(s.id))throw Error('Songs need unique IDs.');ids.add(s.id);});return d;}
 try{const saved=JSON.parse(localStorage.getItem(KEY)||'null');if(saved){checkState(saved);state={...state,...saved};}}catch(e){tell('Starting with the original song. You can restore your collection backup.');}
 function redrawPicker(){$('song-select').replaceChildren();state.songs.forEach(s=>option($('song-select'),s.id,s.title+' · '+(s.artist||'Your analysis')));$('song-select').value=song.id;}
-function chooseSong(id,sectionId){stop();$('recording').pause();song=state.songs.find(s=>s.id===id)||state.songs[0];state.selectedId=song.id;section=song.sections.find(s=>s.id===(sectionId||state.sections[song.id]))||song.sections[0];redrawPicker();renderSong();chooseSection(section.id);save();}
-function renderSong(){$('song-title').textContent=song.title;$('song-artist').textContent=song.artist||'YOUR OWN ANALYSIS';$('song-summary').textContent=song.summary||'';$('song-facts').replaceChildren();for(const t of[H.pretty(song.key)+' major',song.tempo+' BPM','4/4',A.formatTime(song.duration)])$('song-facts').append(el('span','tag',t));$('evidence').textContent=(song.analysisStatus||'Your working analysis')+' · '+(song.variationOf?'A separate harmony variation. Compare it with the original song and recording.':'An editable chord reduction; uncertain choices stay marked. Melody notes are listening prompts.');$('analysis-details').textContent=[song.evidence||song.evidenceNote,song.melodyStatus,song.timingNote].filter(Boolean).join('\n\n');$('thesis').textContent=song.thesis||'Describe the thread that connects the sections in Edit overview.';$('arc').replaceChildren();(song.arc||[]).forEach(t=>$('arc').append(el('li','',typeof t==='string'?t:t.text||'')));renderMap();renderSources();$('notes').value=state.notes[song.id]||'';$('notes-status').textContent='';}
+function chooseSong(id,sectionId){
+ stop();
+ const nextSong=state.songs.find(s=>s.id===id)||state.songs[0];
+ if(song?.id!==nextSong.id)targetKey=nextSong.key;
+ song=nextSong;
+ state.selectedId=song.id;
+ section=song.sections.find(s=>s.id===(sectionId||state.sections[song.id]))||song.sections[0];
+ redrawPicker();
+ const picker=$('playback-key');
+ picker.replaceChildren();
+ H.keys.forEach(key=>option(picker,key,H.pretty(key)+' major'+(key===song.key?' (original)':'')));
+ picker.value=targetKey;
+ renderSong();
+ chooseSection(section.id);
+}
+function renderSong(){$('song-title').textContent=song.title;$('song-artist').textContent=song.artist||'YOUR OWN ANALYSIS';$('song-summary').textContent=song.summary||'';$('song-facts').replaceChildren();for(const t of[H.pretty(song.key)+' major · original',song.tempo+' BPM','4/4',A.formatTime(song.duration)])$('song-facts').append(el('span','tag',t));$('evidence').textContent=(song.analysisStatus||'Your working analysis')+' · '+(song.variationOf?'A separate harmony variation. Compare it with the original song and recording.':'An editable chord reduction; uncertain choices stay marked. Melody notes are listening prompts.');$('analysis-details').textContent=[song.evidence||song.evidenceNote,song.melodyStatus,song.timingNote].filter(Boolean).join('\n\n');$('thesis').textContent=song.thesis||'Describe the thread that connects the sections in Edit overview.';$('arc').replaceChildren();(song.arc||[]).forEach(t=>$('arc').append(el('li','',typeof t==='string'?t:t.text||'')));renderMap();renderSources();$('notes').value=state.notes[song.id]||'';$('notes-status').textContent='';}
 function renderSources(){$('sources').replaceChildren();(song.sources||[]).forEach(s=>{const li=el('li'),url=safeLink(s.url);if(url){const a=el('a','',s.title||'Listening reference');a.href=url;a.target='_blank';a.rel='noopener noreferrer';li.append(a);}else li.append(el('span','',s.title||'Analysis reference'));if(s.note)li.append(el('span','',s.note));$('sources').append(li);});if(!$('sources').children.length)$('sources').append(el('li','muted','Add a recording link in Edit overview.'));}
 function renderMap(){$('section-map').replaceChildren();song.sections.forEach((s,i)=>{const b=el('button','section-tile');b.type='button';b.dataset.section=s.id;b.setAttribute('aria-pressed',String(section&&s.id===section.id));b.append(el('strong','',(i+1)+'. '+s.name),el('span','',A.formatTime(s.startSeconds)+' · '+s.bars.length+' bars'));b.addEventListener('click',()=>chooseSection(s.id));$('section-map').append(b);});drawTension();}
-function drawTension(){const svg=$('tension');svg.replaceChildren();const make=(tag,attrs,text)=>{const n=document.createElementNS('http://www.w3.org/2000/svg',tag);Object.entries(attrs).forEach(([k,v])=>n.setAttribute(k,v));if(text!==undefined)n.textContent=text;svg.append(n);return n;};make('title',{},'Interpretive tension sketch, not an audio measurement');for(const value of[0,2.5,5]){const y=92-value*15;make('line',{x1:32,x2:980,y1:y,y2:y,stroke:'var(--line)','stroke-width':1});make('text',{x:8,y:y+4},String(value));}const coords=song.sections.map((s,i)=>[45+i*920/Math.max(1,song.sections.length-1),92-Math.max(0,Math.min(5,s.tension??2))*15]);make('polyline',{points:coords.map(p=>p.join(',')).join(' '),fill:'none',stroke:'var(--gold)','stroke-width':2.5});coords.forEach(([x,y],i)=>{const s=song.sections[i],c=make('circle',{cx:x,cy:y,r:section&&s.id===section.id?6:4,fill:section&&s.id===section.id?'var(--accent)':'var(--gold)'});const title=document.createElementNS(svg.namespaceURI,'title');title.textContent=s.name+': '+(s.tension??2)+'/5';c.append(title);make('text',{x,y:115,'text-anchor':'middle'},String(i+1));});}
+function drawTension(){
+ const svg=$('tension'),note=$('tension-note');
+ note.textContent=song.tensionNote||'';
+ note.hidden=!note.textContent;
+ svg.replaceChildren();
+ const make=(tag,attrs,text)=>{
+  const node=document.createElementNS('http://www.w3.org/2000/svg',tag);
+  Object.entries(attrs).forEach(([key,value])=>node.setAttribute(key,value));
+  if(text!==undefined)node.textContent=text;
+  svg.append(node);
+  return node;
+ };
+ const scores=song.sections.map(item=>Math.max(0,Math.min(5,item.tension??2)));
+ const maximum=Math.max(...scores);
+ const topIndex=scores.indexOf(maximum);
+ const peak=scores.length>1&&topIndex===scores.lastIndexOf(maximum)?topIndex:-1;
+ const label=peak===-1?'Emotional intensity by section':'Emotional intensity by section. Peak at '+song.sections[peak].name;
+ svg.setAttribute('aria-label',label);
+ make('title',{},label);
+ for(const value of[0,2.5,5]){
+  const y=92-value*15;
+  make('line',{x1:32,x2:980,y1:y,y2:y,stroke:'var(--line)','stroke-width':1});
+  make('text',{x:8,y:y+4},String(value));
+ }
+ const coords=scores.map((score,index)=>[45+index*920/Math.max(1,scores.length-1),92-score*15]);
+ make('polyline',{points:coords.map(point=>point.join(',')).join(' '),fill:'none',stroke:'var(--gold)','stroke-width':2.5});
+ coords.forEach(([x,y],index)=>{
+  const item=song.sections[index];
+  const selected=item.id===section?.id;
+  const isPeak=index===peak;
+  const dot=make('circle',{cx:x,cy:y,r:isPeak?7:selected?6:4,fill:selected||isPeak?'var(--accent)':'var(--gold)'});
+  const title=document.createElementNS(svg.namespaceURI,'title');
+  title.textContent=item.name+' · '+scores[index]+'/5';
+  dot.append(title);
+  if(isPeak)make('text',{x,y:y-10,'text-anchor':'middle',class:'tension-peak'},'Peak');
+  make('text',{x,y:115,'text-anchor':'middle'},String(index+1));
+ });
+}
 function chooseSection(id){section=song.sections.find(s=>s.id===id)||song.sections[0];state.sections[song.id]=section.id;const index=song.sections.indexOf(section);$('section-position').textContent='SECTION '+(index+1)+' OF '+song.sections.length;$('section-name').textContent=section.name;$('section-role').textContent=section.role||'';$('section-timing').textContent=A.formatTime(section.startSeconds)+'–'+A.formatTime(section.endSeconds)+' · '+section.bars.length+' bars · timestamps follow this working map. Dotted chord borders mark an especially uncertain choice.';$('section-analysis').textContent=section.analysis||'Add your harmonic observations in Edit section.';$('melody-note').textContent=section.melodyNote||'Listen with the recording: where does the melody hold, move, or resolve against the chords?';$('transition').textContent=section.transition||'Describe how this passage prepares the next one.';$('previous').disabled=index===0;$('next').disabled=index===song.sections.length-1;renderBars();renderRange();renderRelated();renderMap();$('seek-section').disabled=recordingSongId!==song.id;save();}
-function renderBars(){$('bars').replaceChildren();selectedChord=null;section.bars.forEach((bar,bi)=>{const box=el('div','bar');box.append(el('span','bar-label','BAR '+(bi+1)));if(bar.rest)box.append(el('div','rest','— No chord mapped'));else bar.chords.forEach((c,ci)=>{const b=el('button','chord'+(c.uncertain?' uncertain':''));b.type='button';b.dataset.bar=bi;b.dataset.chord=ci;b.setAttribute('aria-label','Bar '+(bi+1)+', '+H.pretty(c.symbol)+(c.uncertain?', uncertain':''));b.append(document.createTextNode(H.pretty(c.symbol)+(c.uncertain?' ?':'')),el('span','',c.roman||H.roman(c.symbol,song.key)));b.addEventListener('click',()=>{showChord(bi,ci);playChord(c);});box.append(b);});$('bars').append(box);});const first=section.bars.findIndex(b=>!b.rest&&b.chords.length);if(first>=0)showChord(first,0);else $('selected-chord').textContent='No chord has been assigned here. Add one after listening to the recording.';}
-function showChord(bi,ci){const c=section.bars[bi]?.chords[ci];if(!c)return;selectedChord={bi,ci};$('bars').querySelectorAll('.chord').forEach(b=>b.classList.toggle('selected',Number(b.dataset.bar)===bi&&Number(b.dataset.chord)===ci));$('selected-chord').textContent=H.pretty(c.symbol)+' · '+c.beats+' beats · '+c.notes.map(n=>H.spell(n,c.symbol,song.key).text).join(' · ')+(c.comment?'\n'+c.comment:'')+(c.uncertain?'\nWorking choice: compare this colour with the recording before treating it as settled.':'');}
+function chordInSelectedKey(chord){return A.transposeChord(chord,H.shift(song.key,targetKey),targetKey);}
+function renderBars(selection=null){
+ $('bars').replaceChildren();
+ selectedChord=null;
+ section.bars.forEach((bar,bi)=>{
+  const box=el('div','bar');
+  box.append(el('span','bar-label','BAR '+(bi+1)));
+  if(bar.rest)box.append(el('div','rest','— No chord mapped'));
+  for(const [ci,chord] of bar.chords.entries()){
+   const c=chordInSelectedKey(chord);
+   const b=el('button','chord'+(c.uncertain?' uncertain':''));
+   b.type='button';
+   b.dataset.bar=bi;
+   b.dataset.chord=ci;
+   b.setAttribute('aria-label','Bar '+(bi+1)+', '+H.pretty(c.symbol)+(c.uncertain?', uncertain':''));
+   b.append(document.createTextNode(H.pretty(c.symbol)+(c.uncertain?' ?':'')),el('span','',c.roman||H.roman(c.symbol,targetKey)));
+   b.addEventListener('click',()=>{showChord(bi,ci);playChord(c);});
+   box.append(b);
+  }
+  $('bars').append(box);
+ });
+ if(selection){showChord(selection.bi,selection.ci);return;}
+ const first=section.bars.findIndex(b=>b.chords.length);
+ if(first>=0)showChord(first,0);
+ else $('selected-chord').textContent='No chord has been assigned here. Add one after listening to the recording.';
+}
+function showChord(bi,ci){
+ const chord=section.bars[bi]?.chords[ci];
+ if(!chord)return;
+ const c=chordInSelectedKey(chord);
+ selectedChord={bi,ci};
+ $('bars').querySelectorAll('.chord').forEach(b=>b.classList.toggle('selected',Number(b.dataset.bar)===bi&&Number(b.dataset.chord)===ci));
+ const comment=c.comment?'\n'+(targetKey===song.key?'':'Original-key note · ')+c.comment:'';
+ $('selected-chord').textContent=H.pretty(c.symbol)+' · '+c.beats+' beats · '+c.notes.map(n=>H.spell(n,c.symbol,targetKey).text).join(' · ')+comment+(c.uncertain?'\nWorking choice: compare this colour with the recording before treating it as settled.':'');
+}
 function renderRange(){for(const id of['range-from','range-to']){$(id).replaceChildren();section.bars.forEach((b,i)=>option($(id),i+1,String(i+1)+(b.rest?' · unmapped':'')));}let first=section.bars.findIndex(b=>!b.rest);if(first<0)first=0;$('range-from').value=String(first+1);let end=Math.min(section.bars.length,first+8);for(let i=first;i<end;i++)if(section.bars[i].rest){end=Math.max(first+1,i);break;}$('range-to').value=String(end);$('phrase-error').textContent='';}
 function renderRelated(){$('lab-connection').textContent=section.labConnection||'Compare these patterns as listening analogies; they need not be the exact progression used in the recording.';const earlier=song.sections.find(s=>s.id===section.repriseOf);$('reprise-panel').hidden=!earlier;if(earlier)$('reprise-note').textContent='This passage revisits '+earlier.name+' ('+A.formatTime(earlier.startSeconds)+'). Listen for what the melody and performance add when the harmonic place returns.';$('related-links').replaceChildren();const liveStudies=studio.libraryStudies?studio.libraryStudies():LAB_STUDIES,ids=section.relatedEntryIds||[],entries=ids.map(id=>liveStudies.find(e=>e.id===id)).filter(Boolean);for(const e of entries){const a=el('a','',e.title+' →');a.href='OPEN-Harmony-Lab.html#entry='+encodeURIComponent(e.id);$('related-links').append(a);}if(!entries.length)$('related-links').append(el('a','','Browse the Harmony Lab →'));const a=$('related-links').lastElementChild;if(a&&!a.getAttribute('href'))a.href='OPEN-Harmony-Lab.html';}
 function releaseNodes(){nodes.forEach(n=>{try{n.stop();n.disconnect();}catch(e){}});nodes=[];if(bus){bus.disconnect();bus=null;}}
 function stop(pauseRecording=true){if(pauseRecording)$('recording').pause();generation++;cancelAnimationFrame(raf);releaseNodes();playing=null;$('play-all').disabled=false;$('play-section').disabled=false;$('stop').disabled=true;$('play-status').textContent='Ready to listen';document.querySelectorAll('.now').forEach(e=>e.classList.remove('now'));}
 function synthNote(midi,time,duration,vol){const gain=context.createGain();gain.gain.setValueAtTime(.0001,time);gain.gain.exponentialRampToValueAtTime(vol,time+.018);gain.gain.exponentialRampToValueAtTime(vol*.3,time+.35);gain.gain.exponentialRampToValueAtTime(.0001,time+Math.max(.4,duration));gain.connect(bus);for(const [harmonic,amount]of[[1,1],[2,.18],[3,.04]]){const oscillator=context.createOscillator(),amp=context.createGain();oscillator.frequency.value=440*2**((midi-69)/12)*harmonic;amp.gain.value=amount;oscillator.connect(amp);amp.connect(gain);oscillator.start(time);oscillator.stop(time+Math.max(.45,duration)+.04);nodes.push(oscillator);}}
-async function startEvents(events,from,to,label){stop();$('recording').pause();const token=generation;try{if(!events.length)throw Error('There are no mapped chords in this selection.');const Audio=window.AudioContext||window.webkitAudioContext;if(!Audio)throw Error('This browser cannot synthesize audio.');if(!context)context=new Audio();await context.resume();if(token!==generation)return;bus=context.createGain();bus.gain.value=.42;bus.connect(context.destination);const start=context.currentTime+.1;events.forEach(e=>e.notes.forEach((n,i)=>synthNote(n,start+e.startSeconds-from+i*.012,Math.max(.4,e.durationSeconds-.06),i?.085:.12)));playing={start,from,to,label};$('play-all').disabled=true;$('play-section').disabled=true;$('stop').disabled=false;$('play-status').textContent=label;animate();}catch(e){stop();tell(e.message);}}
-function animate(){if(!playing)return;const sec=playing.from+context.currentTime-playing.start;if(sec>=playing.to){stop();return;}highlightAt(sec,false);$('play-status').textContent=playing.label+' · '+A.formatTime(Math.max(0,sec));raf=requestAnimationFrame(animate);}
+async function startEvents(events,from,to,label){
+ stop();
+ const token=generation;
+ try{
+  if(!events.length)throw Error('There are no mapped chords in this selection.');
+  const Audio=window.AudioContext||window.webkitAudioContext;
+  if(!Audio)throw Error('This browser cannot synthesize audio.');
+  if(!context)context=new Audio();
+  await context.resume();
+  if(token!==generation)return;
+  bus=context.createGain();
+  bus.gain.value=.42;
+  bus.connect(context.destination);
+  const start=context.currentTime+.1;
+  for(const event of events){
+   const offset=event.offsetSeconds??(event.startSeconds-from);
+   event.notes.forEach((note,index)=>synthNote(note,start+offset+index*.012,Math.max(.4,event.durationSeconds-.06),index===0?.12:.085));
+  }
+  const audition=events[0].offsetSeconds===undefined?null:events;
+  playing={start,from,to,label,audition,eventIndex:0};
+  $('play-all').disabled=true;
+  $('play-section').disabled=true;
+  $('stop').disabled=false;
+  animate();
+ }catch(error){
+  if(token!==generation)return;
+  stop();
+  $('play-status').textContent=error.message;
+ }
+}
+function animate(){
+ if(!playing)return;
+ const elapsed=Math.max(0,context.currentTime-playing.start);
+ if(playing.from+elapsed>=playing.to){stop();return;}
+ let sourceTime=playing.from+elapsed;
+ if(playing.audition){
+  const events=playing.audition;
+  while(events[playing.eventIndex+1]?.offsetSeconds<=elapsed)playing.eventIndex++;
+  const event=events[playing.eventIndex];
+  sourceTime=event.startSeconds+(elapsed-event.offsetSeconds);
+ }
+ highlightAt(sourceTime,false);
+ $('play-status').textContent=playing.label+' · '+(playing.audition?'Song time ':'')+A.formatTime(sourceTime);
+ raf=requestAnimationFrame(animate);
+}
 function highlightAt(sec,follow){const current=song.sections.find(s=>sec>=s.startSeconds&&sec<s.endSeconds);if(follow&&current&&current.id!==section.id)chooseSection(current.id);document.querySelectorAll('.now').forEach(n=>n.classList.remove('now'));if(!current)return;const tile=[...$('section-map').children].find(n=>n.dataset.section===current.id);if(tile)tile.classList.add('now');if(current.id===section.id){const barIndex=Math.floor((sec-section.startSeconds)/(240/song.tempo));let beat=(sec-section.startSeconds)*song.tempo/60-barIndex*4;const bar=section.bars[barIndex];if(bar&&!bar.rest){let pos=0;bar.chords.forEach((c,i)=>{if(beat>=pos&&beat<pos+c.beats){const n=$('bars').querySelector('[data-bar="'+barIndex+'"][data-chord="'+i+'"]');if(n)n.classList.add('now');}pos+=c.beats;});}}}
 function playChord(c){startEvents([{notes:c.notes,startSeconds:0,durationSeconds:Math.min(2,c.beats*60/song.tempo)}],0,Math.min(2,c.beats*60/song.tempo),'Chord preview');}
 function download(name,body,type){const url=URL.createObjectURL(new Blob([body],{type})),a=el('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),3000);}
@@ -34,9 +161,25 @@ $('section-form').addEventListener('submit',e=>{e.preventDefault();try{const dra
 $('song-select').addEventListener('change',()=>chooseSong($('song-select').value));$('add-song').addEventListener('click',()=>openSongEditor(false));$('edit-overview').addEventListener('click',()=>openSongEditor(true));$('add-section').addEventListener('click',()=>openSectionEditor(true));$('edit-section').addEventListener('click',()=>openSectionEditor(false));for(const id of['song-close','song-cancel'])$(id).addEventListener('click',()=>$('song-dialog').close());for(const id of['section-close','section-cancel'])$(id).addEventListener('click',()=>$('section-dialog').close());
 $('reprise-link').addEventListener('click',()=>{if(section.repriseOf)chooseSection(section.repriseOf);});
 $('previous').addEventListener('click',()=>chooseSection(song.sections[Math.max(0,song.sections.indexOf(section)-1)].id));$('next').addEventListener('click',()=>chooseSection(song.sections[Math.min(song.sections.length-1,song.sections.indexOf(section)+1)].id));$('range-from').addEventListener('change',()=>{if(Number($('range-to').value)<Number($('range-from').value))$('range-to').value=$('range-from').value;});$('send-lab').addEventListener('click',()=>{try{const entry=A.phraseEntry(song,section,Number($('range-from').value),Number($('range-to').value));save();stop();location.assign(A.linkToLab(entry));}catch(e){$('phrase-error').textContent=e.message;}});
-$('play-all').addEventListener('click',()=>startEvents(A.playbackEvents(song),0,song.duration,'Whole-song harmony'));$('play-section').addEventListener('click',()=>{const events=A.playbackEvents(song).filter(e=>e.startSeconds>=section.startSeconds&&e.startSeconds<section.endSeconds);startEvents(events,section.startSeconds,section.endSeconds,section.name);});$('stop').addEventListener('click',()=>stop());
+$('play-all').addEventListener('click',()=>{
+ const {events,duration}=A.harmonyAudition(song,targetKey);
+ startEvents(events,0,duration,'Mapped harmony');
+});
+$('play-section').addEventListener('click',()=>{const events=A.playbackEvents(song,targetKey).filter(e=>e.startSeconds>=section.startSeconds&&e.startSeconds<section.endSeconds);startEvents(events,section.startSeconds,section.endSeconds,section.name);});$('stop').addEventListener('click',()=>stop());
+$('playback-key').addEventListener('change',()=>{
+ stop();
+ targetKey=$('playback-key').value;
+ renderBars(selectedChord);
+});
 $('load-audio').addEventListener('click',()=>$('audio-file').click());$('audio-file').addEventListener('change',e=>{const file=e.target.files[0];if(!file)return;stop();$('recording').pause();if(audioUrl)URL.revokeObjectURL(audioUrl);audioUrl=URL.createObjectURL(file);$('recording').src=audioUrl;recordingSongId=song.id;$('audio-status').textContent='Loaded for '+song.title+': '+file.name+'. Check the opening alignment; timestamps are approximate.';$('seek-section').disabled=false;e.target.value='';});$('recording').addEventListener('play',()=>{stop(false);$('stop').disabled=false;$('play-status').textContent='Recording · '+song.title;if(recordingSongId!==song.id){$('recording').pause();tell('This recording belongs to another song. Choose local audio for the current song.');}});$('recording').addEventListener('pause',()=>{if(!playing){$('stop').disabled=true;$('play-status').textContent='Ready to listen';}});$('recording').addEventListener('timeupdate',()=>{if(recordingSongId===song.id){highlightAt($('recording').currentTime,$('follow-audio').checked);if(!$('recording').paused)$('play-status').textContent='Recording · '+A.formatTime($('recording').currentTime);}});$('seek-section').addEventListener('click',()=>{if(recordingSongId!==song.id)return;stop();$('recording').currentTime=section.startSeconds;$('recording').play().catch(e=>tell('Use the recording player’s Play control to begin listening.'));});
-$('notes').addEventListener('input',()=>{state.notes[song.id]=$('notes').value;$('notes-status').textContent=save()?'Saved in this browser and included in your collection backup.':'Use Back up collection before closing.';});$('backup').addEventListener('click',()=>download('my-song-atlas-backup-'+new Date().toISOString().slice(0,10)+'.json',JSON.stringify({...state,format:'my-song-atlas',exportedAt:new Date().toISOString()},null,2),'application/json'));$('restore').addEventListener('click',()=>$('restore-file').click());$('restore-file').addEventListener('change',async e=>{const file=e.target.files[0];if(!file)return;try{if(file.size>8*1024*1024)throw Error('Choose an atlas backup smaller than 8 MB.');const data=checkState(JSON.parse(await file.text()));state={version:1,songs:data.songs,notes:data.notes&&typeof data.notes==='object'?data.notes:{},sections:data.sections&&typeof data.sections==='object'?data.sections:{},selectedId:data.selectedId||data.songs[0].id};save();chooseSong(state.selectedId);tell('Song collection restored.');}catch(err){tell('Could not restore: '+err.message);}e.target.value='';});$('midi').addEventListener('click',()=>{try{download('song-atlas-'+song.id+'.mid',A.midi(song),'audio/midi');tell('Downloaded the complete working chord reduction. Choose instruments in your DAW.');}catch(e){tell(e.message);}});
+$('notes').addEventListener('input',()=>{state.notes[song.id]=$('notes').value;$('notes-status').textContent=save()?'Saved in this browser and included in your collection backup.':'Use Back up collection before closing.';});$('backup').addEventListener('click',()=>download('my-song-atlas-backup-'+new Date().toISOString().slice(0,10)+'.json',JSON.stringify({...state,format:'my-song-atlas',exportedAt:new Date().toISOString()},null,2),'application/json'));$('restore').addEventListener('click',()=>$('restore-file').click());$('restore-file').addEventListener('change',async e=>{const file=e.target.files[0];if(!file)return;try{if(file.size>8*1024*1024)throw Error('Choose an atlas backup smaller than 8 MB.');const data=checkState(JSON.parse(await file.text()));state={version:1,songs:data.songs,notes:data.notes&&typeof data.notes==='object'?data.notes:{},sections:data.sections&&typeof data.sections==='object'?data.sections:{},selectedId:data.selectedId||data.songs[0].id};save();chooseSong(state.selectedId);tell('Song collection restored.');}catch(err){tell('Could not restore: '+err.message);}e.target.value='';});
+$('midi').addEventListener('click',()=>{
+ try{
+  const keySuffix=targetKey===song.key?'':'-'+targetKey.replace('#','-sharp');
+  download('song-atlas-'+song.id+keySuffix+'.mid',A.midi(song,targetKey),'audio/midi');
+  tell('Downloaded full harmony in '+H.pretty(targetKey)+' major.');
+ }catch(e){tell(e.message);}
+});
 function clearRoute(){try{history.replaceState(null,'',location.pathname+location.search);}catch(e){}}
 function cancelVariation(){pendingVariation=null;$('variation-dialog').close();clearRoute();}
 for(const id of['variation-close','variation-cancel'])$(id).addEventListener('click',cancelVariation);$('variation-dialog').addEventListener('cancel',e=>{e.preventDefault();cancelVariation();});

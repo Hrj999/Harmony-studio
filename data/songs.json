@@ -64,7 +64,7 @@
             {
               "chords": [],
               "globalBar": 1,
-              "startSeconds": 0.0,
+              "startSeconds": 0,
               "rest": true,
               "comment": "Opening pickup / texture: no chord assigned in the source draft. This is an unmapped interval, not a verified claim of silence."
             },
@@ -83,13 +83,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 3.0,
+                  "sourceEventStartSeconds": 3,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 2,
-              "startSeconds": 3.0
+              "startSeconds": 3
             },
             {
               "chords": [
@@ -107,13 +107,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 6.0,
+                  "sourceEventStartSeconds": 6,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 3,
-              "startSeconds": 6.0
+              "startSeconds": 6
             },
             {
               "chords": [
@@ -131,13 +131,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 9.0,
+                  "sourceEventStartSeconds": 9,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 4,
-              "startSeconds": 9.0
+              "startSeconds": 9
             },
             {
               "chords": [
@@ -154,13 +154,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 12.0,
+                  "sourceEventStartSeconds": 12,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 5,
-              "startSeconds": 12.0
+              "startSeconds": 12
             },
             {
               "chords": [
@@ -178,13 +178,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 15.0,
+                  "sourceEventStartSeconds": 15,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 6,
-              "startSeconds": 15.0
+              "startSeconds": 15
             },
             {
               "chords": [
@@ -201,13 +201,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 18.0,
+                  "sourceEventStartSeconds": 18,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 7,
-              "startSeconds": 18.0
+              "startSeconds": 18
             },
             {
               "chords": [
@@ -225,13 +225,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 21.0,
+                  "sourceEventStartSeconds": 21,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 8,
-              "startSeconds": 21.0
+              "startSeconds": 21
             },
             {
               "chords": [
@@ -249,13 +249,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 24.0,
+                  "sourceEventStartSeconds": 24,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 9,
-              "startSeconds": 24.0
+              "startSeconds": 24
             }
           ],
           "uncertainChords": 0,
@@ -292,13 +292,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 27.0,
+                  "sourceEventStartSeconds": 27,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 10,
-              "startSeconds": 27.0
+              "startSeconds": 27
             },
             {
               "chords": [
@@ -316,13 +316,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 30.0,
+                  "sourceEventStartSeconds": 30,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 11,
-              "startSeconds": 30.0
+              "startSeconds": 30
             },
             {
               "chords": [
@@ -340,13 +340,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 33.0,
+                  "sourceEventStartSeconds": 33,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 12,
-              "startSeconds": 33.0
+              "startSeconds": 33
             },
             {
               "chords": [
@@ -364,13 +364,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 36.0,
+                  "sourceEventStartSeconds": 36,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 13,
-              "startSeconds": 36.0
+              "startSeconds": 36
             },
             {
               "chords": [
@@ -391,13 +391,13 @@
                     "A7",
                     "Am7"
                   ],
-                  "sourceEventStartSeconds": 39.0,
+                  "sourceEventStartSeconds": 39,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 14,
-              "startSeconds": 39.0
+              "startSeconds": 39
             },
             {
               "chords": [
@@ -415,13 +415,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 42.0,
+                  "sourceEventStartSeconds": 42,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 15,
-              "startSeconds": 42.0
+              "startSeconds": 42
             },
             {
               "chords": [
@@ -439,13 +439,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 45.0,
+                  "sourceEventStartSeconds": 45,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 16,
-              "startSeconds": 45.0
+              "startSeconds": 45
             },
             {
               "chords": [
@@ -463,13 +463,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 48.0,
+                  "sourceEventStartSeconds": 48,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 17,
-              "startSeconds": 48.0
+              "startSeconds": 48
             }
           ],
           "uncertainChords": 1,
@@ -507,13 +507,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 51.0,
+                  "sourceEventStartSeconds": 51,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 18,
-              "startSeconds": 51.0
+              "startSeconds": 51
             },
             {
               "chords": [
@@ -531,13 +531,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 54.0,
+                  "sourceEventStartSeconds": 54,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 19,
-              "startSeconds": 54.0
+              "startSeconds": 54
             },
             {
               "chords": [
@@ -555,13 +555,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 57.0,
+                  "sourceEventStartSeconds": 57,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 20,
-              "startSeconds": 57.0
+              "startSeconds": 57
             },
             {
               "chords": [
@@ -579,13 +579,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 60.0,
+                  "sourceEventStartSeconds": 60,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 21,
-              "startSeconds": 60.0
+              "startSeconds": 60
             },
             {
               "chords": [
@@ -603,13 +603,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 63.0,
+                  "sourceEventStartSeconds": 63,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 22,
-              "startSeconds": 63.0
+              "startSeconds": 63
             },
             {
               "chords": [
@@ -627,13 +627,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 66.0,
+                  "sourceEventStartSeconds": 66,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 23,
-              "startSeconds": 66.0
+              "startSeconds": 66
             },
             {
               "chords": [
@@ -651,13 +651,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 69.0,
+                  "sourceEventStartSeconds": 69,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 24,
-              "startSeconds": 69.0
+              "startSeconds": 69
             },
             {
               "chords": [
@@ -675,13 +675,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 72.0,
+                  "sourceEventStartSeconds": 72,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 25,
-              "startSeconds": 72.0
+              "startSeconds": 72
             }
           ],
           "uncertainChords": 0,
@@ -719,13 +719,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 75.0,
+                  "sourceEventStartSeconds": 75,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 26,
-              "startSeconds": 75.0
+              "startSeconds": 75
             },
             {
               "chords": [
@@ -743,13 +743,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 78.0,
+                  "sourceEventStartSeconds": 78,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 27,
-              "startSeconds": 78.0
+              "startSeconds": 78
             },
             {
               "chords": [
@@ -767,13 +767,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 81.0,
+                  "sourceEventStartSeconds": 81,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 28,
-              "startSeconds": 81.0
+              "startSeconds": 81
             },
             {
               "chords": [
@@ -794,8 +794,8 @@
                     "C6",
                     "Cm7"
                   ],
-                  "sourceEventStartSeconds": 84.0,
-                  "beats": 2.0,
+                  "sourceEventStartSeconds": 84,
+                  "beats": 2,
                   "continuation": false
                 },
                 {
@@ -812,12 +812,12 @@
                   "sourceConfidence": 0.55,
                   "alternatives": [],
                   "sourceEventStartSeconds": 85.5,
-                  "beats": 2.0,
+                  "beats": 2,
                   "continuation": false
                 }
               ],
               "globalBar": 29,
-              "startSeconds": 84.0
+              "startSeconds": 84
             },
             {
               "chords": [
@@ -835,13 +835,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 87.0,
+                  "sourceEventStartSeconds": 87,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 30,
-              "startSeconds": 87.0
+              "startSeconds": 87
             },
             {
               "chords": [
@@ -858,13 +858,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 90.0,
+                  "sourceEventStartSeconds": 90,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 31,
-              "startSeconds": 90.0
+              "startSeconds": 90
             },
             {
               "chords": [
@@ -882,13 +882,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 93.0,
+                  "sourceEventStartSeconds": 93,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 32,
-              "startSeconds": 93.0
+              "startSeconds": 93
             },
             {
               "chords": [
@@ -906,13 +906,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 96.0,
+                  "sourceEventStartSeconds": 96,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 33,
-              "startSeconds": 96.0
+              "startSeconds": 96
             }
           ],
           "uncertainChords": 2,
@@ -951,13 +951,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 99.0,
+                  "sourceEventStartSeconds": 99,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 34,
-              "startSeconds": 99.0
+              "startSeconds": 99
             },
             {
               "chords": [
@@ -975,13 +975,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 102.0,
+                  "sourceEventStartSeconds": 102,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 35,
-              "startSeconds": 102.0
+              "startSeconds": 102
             },
             {
               "chords": [
@@ -999,13 +999,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 105.0,
+                  "sourceEventStartSeconds": 105,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 36,
-              "startSeconds": 105.0
+              "startSeconds": 105
             },
             {
               "chords": [
@@ -1023,8 +1023,8 @@
                   "uncertain": true,
                   "sourceConfidence": 0.55,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 108.0,
-                  "beats": 2.0,
+                  "sourceEventStartSeconds": 108,
+                  "beats": 2,
                   "continuation": false
                 },
                 {
@@ -1042,12 +1042,12 @@
                   "sourceConfidence": 0.55,
                   "alternatives": [],
                   "sourceEventStartSeconds": 109.5,
-                  "beats": 2.0,
+                  "beats": 2,
                   "continuation": false
                 }
               ],
               "globalBar": 37,
-              "startSeconds": 108.0
+              "startSeconds": 108
             },
             {
               "chords": [
@@ -1065,13 +1065,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 111.0,
+                  "sourceEventStartSeconds": 111,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 38,
-              "startSeconds": 111.0
+              "startSeconds": 111
             },
             {
               "chords": [
@@ -1089,8 +1089,8 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 114.0,
-                  "beats": 2.0,
+                  "sourceEventStartSeconds": 114,
+                  "beats": 2,
                   "continuation": false
                 },
                 {
@@ -1108,12 +1108,12 @@
                   "sourceConfidence": 0.85,
                   "alternatives": [],
                   "sourceEventStartSeconds": 115.5,
-                  "beats": 2.0,
+                  "beats": 2,
                   "continuation": false
                 }
               ],
               "globalBar": 39,
-              "startSeconds": 114.0
+              "startSeconds": 114
             },
             {
               "chords": [
@@ -1131,13 +1131,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 117.0,
+                  "sourceEventStartSeconds": 117,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 40,
-              "startSeconds": 117.0
+              "startSeconds": 117
             },
             {
               "chords": [
@@ -1155,13 +1155,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 120.0,
+                  "sourceEventStartSeconds": 120,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 41,
-              "startSeconds": 120.0
+              "startSeconds": 120
             }
           ],
           "uncertainChords": 2,
@@ -1198,13 +1198,13 @@
                   "uncertain": true,
                   "sourceConfidence": 0.55,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 123.0,
+                  "sourceEventStartSeconds": 123,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 42,
-              "startSeconds": 123.0
+              "startSeconds": 123
             },
             {
               "chords": [
@@ -1221,13 +1221,13 @@
                   "uncertain": true,
                   "sourceConfidence": 0.55,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 126.0,
+                  "sourceEventStartSeconds": 126,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 43,
-              "startSeconds": 126.0
+              "startSeconds": 126
             },
             {
               "chords": [
@@ -1245,13 +1245,13 @@
                   "uncertain": true,
                   "sourceConfidence": 0.55,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 129.0,
+                  "sourceEventStartSeconds": 129,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 44,
-              "startSeconds": 129.0
+              "startSeconds": 129
             },
             {
               "chords": [
@@ -1269,13 +1269,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 132.0,
+                  "sourceEventStartSeconds": 132,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 45,
-              "startSeconds": 132.0
+              "startSeconds": 132
             }
           ],
           "uncertainChords": 3,
@@ -1313,13 +1313,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 135.0,
+                  "sourceEventStartSeconds": 135,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 46,
-              "startSeconds": 135.0
+              "startSeconds": 135
             },
             {
               "chords": [
@@ -1337,13 +1337,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 138.0,
+                  "sourceEventStartSeconds": 138,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 47,
-              "startSeconds": 138.0
+              "startSeconds": 138
             },
             {
               "chords": [
@@ -1361,13 +1361,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 141.0,
+                  "sourceEventStartSeconds": 141,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 48,
-              "startSeconds": 141.0
+              "startSeconds": 141
             },
             {
               "chords": [
@@ -1385,13 +1385,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 144.0,
+                  "sourceEventStartSeconds": 144,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 49,
-              "startSeconds": 144.0
+              "startSeconds": 144
             },
             {
               "chords": [
@@ -1409,13 +1409,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 147.0,
+                  "sourceEventStartSeconds": 147,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 50,
-              "startSeconds": 147.0
+              "startSeconds": 147
             },
             {
               "chords": [
@@ -1433,13 +1433,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 150.0,
+                  "sourceEventStartSeconds": 150,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 51,
-              "startSeconds": 150.0
+              "startSeconds": 150
             },
             {
               "chords": [
@@ -1457,13 +1457,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 153.0,
+                  "sourceEventStartSeconds": 153,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 52,
-              "startSeconds": 153.0
+              "startSeconds": 153
             },
             {
               "chords": [
@@ -1481,13 +1481,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 156.0,
+                  "sourceEventStartSeconds": 156,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 53,
-              "startSeconds": 156.0
+              "startSeconds": 156
             }
           ],
           "uncertainChords": 0,
@@ -1526,13 +1526,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 159.0,
+                  "sourceEventStartSeconds": 159,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 54,
-              "startSeconds": 159.0
+              "startSeconds": 159
             },
             {
               "chords": [
@@ -1550,13 +1550,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 162.0,
+                  "sourceEventStartSeconds": 162,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 55,
-              "startSeconds": 162.0
+              "startSeconds": 162
             },
             {
               "chords": [
@@ -1574,13 +1574,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 165.0,
+                  "sourceEventStartSeconds": 165,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 56,
-              "startSeconds": 165.0
+              "startSeconds": 165
             },
             {
               "chords": [
@@ -1601,8 +1601,8 @@
                     "C6",
                     "Cm7"
                   ],
-                  "sourceEventStartSeconds": 168.0,
-                  "beats": 2.0,
+                  "sourceEventStartSeconds": 168,
+                  "beats": 2,
                   "continuation": false
                 },
                 {
@@ -1619,12 +1619,12 @@
                   "sourceConfidence": 0.55,
                   "alternatives": [],
                   "sourceEventStartSeconds": 169.5,
-                  "beats": 2.0,
+                  "beats": 2,
                   "continuation": false
                 }
               ],
               "globalBar": 57,
-              "startSeconds": 168.0
+              "startSeconds": 168
             },
             {
               "chords": [
@@ -1642,13 +1642,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 171.0,
+                  "sourceEventStartSeconds": 171,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 58,
-              "startSeconds": 171.0
+              "startSeconds": 171
             },
             {
               "chords": [
@@ -1665,13 +1665,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 174.0,
+                  "sourceEventStartSeconds": 174,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 59,
-              "startSeconds": 174.0
+              "startSeconds": 174
             },
             {
               "chords": [
@@ -1689,13 +1689,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 177.0,
+                  "sourceEventStartSeconds": 177,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 60,
-              "startSeconds": 177.0
+              "startSeconds": 177
             },
             {
               "chords": [
@@ -1713,13 +1713,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 180.0,
+                  "sourceEventStartSeconds": 180,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 61,
-              "startSeconds": 180.0
+              "startSeconds": 180
             }
           ],
           "uncertainChords": 2,
@@ -1758,13 +1758,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 183.0,
+                  "sourceEventStartSeconds": 183,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 62,
-              "startSeconds": 183.0
+              "startSeconds": 183
             },
             {
               "chords": [
@@ -1782,13 +1782,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 186.0,
+                  "sourceEventStartSeconds": 186,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 63,
-              "startSeconds": 186.0
+              "startSeconds": 186
             },
             {
               "chords": [
@@ -1806,13 +1806,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 189.0,
+                  "sourceEventStartSeconds": 189,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 64,
-              "startSeconds": 189.0
+              "startSeconds": 189
             },
             {
               "chords": [
@@ -1833,8 +1833,8 @@
                     "C7sus4",
                     "Cm7"
                   ],
-                  "sourceEventStartSeconds": 192.0,
-                  "beats": 2.0,
+                  "sourceEventStartSeconds": 192,
+                  "beats": 2,
                   "continuation": false
                 },
                 {
@@ -1852,12 +1852,12 @@
                   "sourceConfidence": 0.55,
                   "alternatives": [],
                   "sourceEventStartSeconds": 193.5,
-                  "beats": 2.0,
+                  "beats": 2,
                   "continuation": false
                 }
               ],
               "globalBar": 65,
-              "startSeconds": 192.0
+              "startSeconds": 192
             },
             {
               "chords": [
@@ -1875,13 +1875,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 195.0,
+                  "sourceEventStartSeconds": 195,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 66,
-              "startSeconds": 195.0
+              "startSeconds": 195
             },
             {
               "chords": [
@@ -1899,8 +1899,8 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 198.0,
-                  "beats": 2.0,
+                  "sourceEventStartSeconds": 198,
+                  "beats": 2,
                   "continuation": false
                 },
                 {
@@ -1918,12 +1918,12 @@
                   "sourceConfidence": 0.85,
                   "alternatives": [],
                   "sourceEventStartSeconds": 199.5,
-                  "beats": 2.0,
+                  "beats": 2,
                   "continuation": false
                 }
               ],
               "globalBar": 67,
-              "startSeconds": 198.0
+              "startSeconds": 198
             },
             {
               "chords": [
@@ -1941,13 +1941,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 201.0,
+                  "sourceEventStartSeconds": 201,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 68,
-              "startSeconds": 201.0
+              "startSeconds": 201
             },
             {
               "chords": [
@@ -1965,13 +1965,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 204.0,
+                  "sourceEventStartSeconds": 204,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 69,
-              "startSeconds": 204.0
+              "startSeconds": 204
             }
           ],
           "uncertainChords": 2,
@@ -2007,13 +2007,13 @@
                   "uncertain": true,
                   "sourceConfidence": 0.55,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 207.0,
+                  "sourceEventStartSeconds": 207,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 70,
-              "startSeconds": 207.0
+              "startSeconds": 207
             },
             {
               "chords": [
@@ -2031,13 +2031,13 @@
                   "uncertain": true,
                   "sourceConfidence": 0.55,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 210.0,
+                  "sourceEventStartSeconds": 210,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 71,
-              "startSeconds": 210.0
+              "startSeconds": 210
             }
           ],
           "uncertainChords": 2,
@@ -2076,13 +2076,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 213.0,
+                  "sourceEventStartSeconds": 213,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 72,
-              "startSeconds": 213.0
+              "startSeconds": 213
             },
             {
               "chords": [
@@ -2100,13 +2100,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 216.0,
+                  "sourceEventStartSeconds": 216,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 73,
-              "startSeconds": 216.0
+              "startSeconds": 216
             },
             {
               "chords": [
@@ -2124,13 +2124,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 219.0,
+                  "sourceEventStartSeconds": 219,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 74,
-              "startSeconds": 219.0
+              "startSeconds": 219
             },
             {
               "chords": [
@@ -2148,8 +2148,8 @@
                   "uncertain": true,
                   "sourceConfidence": 0.55,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 222.0,
-                  "beats": 2.0,
+                  "sourceEventStartSeconds": 222,
+                  "beats": 2,
                   "continuation": false
                 },
                 {
@@ -2167,12 +2167,12 @@
                   "sourceConfidence": 0.55,
                   "alternatives": [],
                   "sourceEventStartSeconds": 223.5,
-                  "beats": 2.0,
+                  "beats": 2,
                   "continuation": false
                 }
               ],
               "globalBar": 75,
-              "startSeconds": 222.0
+              "startSeconds": 222
             },
             {
               "chords": [
@@ -2190,13 +2190,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 225.0,
+                  "sourceEventStartSeconds": 225,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 76,
-              "startSeconds": 225.0
+              "startSeconds": 225
             },
             {
               "chords": [
@@ -2213,13 +2213,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 228.0,
+                  "sourceEventStartSeconds": 228,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 77,
-              "startSeconds": 228.0
+              "startSeconds": 228
             },
             {
               "chords": [
@@ -2237,13 +2237,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 231.0,
+                  "sourceEventStartSeconds": 231,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 78,
-              "startSeconds": 231.0
+              "startSeconds": 231
             },
             {
               "chords": [
@@ -2261,13 +2261,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 234.0,
+                  "sourceEventStartSeconds": 234,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 79,
-              "startSeconds": 234.0
+              "startSeconds": 234
             }
           ],
           "uncertainChords": 2,
@@ -2306,13 +2306,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 237.0,
+                  "sourceEventStartSeconds": 237,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 80,
-              "startSeconds": 237.0
+              "startSeconds": 237
             },
             {
               "chords": [
@@ -2330,13 +2330,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 240.0,
+                  "sourceEventStartSeconds": 240,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 81,
-              "startSeconds": 240.0
+              "startSeconds": 240
             },
             {
               "chords": [
@@ -2354,13 +2354,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 243.0,
+                  "sourceEventStartSeconds": 243,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 82,
-              "startSeconds": 243.0
+              "startSeconds": 243
             },
             {
               "chords": [
@@ -2381,8 +2381,8 @@
                     "C7sus4",
                     "Cm7"
                   ],
-                  "sourceEventStartSeconds": 246.0,
-                  "beats": 2.0,
+                  "sourceEventStartSeconds": 246,
+                  "beats": 2,
                   "continuation": false
                 },
                 {
@@ -2400,12 +2400,12 @@
                   "sourceConfidence": 0.55,
                   "alternatives": [],
                   "sourceEventStartSeconds": 247.5,
-                  "beats": 2.0,
+                  "beats": 2,
                   "continuation": false
                 }
               ],
               "globalBar": 83,
-              "startSeconds": 246.0
+              "startSeconds": 246
             },
             {
               "chords": [
@@ -2423,13 +2423,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 249.0,
+                  "sourceEventStartSeconds": 249,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 84,
-              "startSeconds": 249.0
+              "startSeconds": 249
             },
             {
               "chords": [
@@ -2447,8 +2447,8 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 252.0,
-                  "beats": 2.0,
+                  "sourceEventStartSeconds": 252,
+                  "beats": 2,
                   "continuation": false
                 },
                 {
@@ -2466,12 +2466,12 @@
                   "sourceConfidence": 0.85,
                   "alternatives": [],
                   "sourceEventStartSeconds": 253.5,
-                  "beats": 2.0,
+                  "beats": 2,
                   "continuation": false
                 }
               ],
               "globalBar": 85,
-              "startSeconds": 252.0
+              "startSeconds": 252
             },
             {
               "chords": [
@@ -2489,13 +2489,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 255.0,
+                  "sourceEventStartSeconds": 255,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 86,
-              "startSeconds": 255.0
+              "startSeconds": 255
             },
             {
               "chords": [
@@ -2513,13 +2513,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 258.0,
+                  "sourceEventStartSeconds": 258,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 87,
-              "startSeconds": 258.0
+              "startSeconds": 258
             }
           ],
           "uncertainChords": 2,
@@ -2557,13 +2557,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 261.0,
+                  "sourceEventStartSeconds": 261,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 88,
-              "startSeconds": 261.0
+              "startSeconds": 261
             },
             {
               "chords": [
@@ -2580,13 +2580,13 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 264.0,
+                  "sourceEventStartSeconds": 264,
                   "beats": 4,
                   "continuation": false
                 }
               ],
               "globalBar": 89,
-              "startSeconds": 264.0
+              "startSeconds": 264
             },
             {
               "chords": [
@@ -2604,8 +2604,8 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 267.0,
-                  "beats": 2.0,
+                  "sourceEventStartSeconds": 267,
+                  "beats": 2,
                   "continuation": false
                 },
                 {
@@ -2623,12 +2623,12 @@
                   "sourceConfidence": 0.85,
                   "alternatives": [],
                   "sourceEventStartSeconds": 268.5,
-                  "beats": 2.0,
+                  "beats": 2,
                   "continuation": false
                 }
               ],
               "globalBar": 90,
-              "startSeconds": 267.0
+              "startSeconds": 267
             },
             {
               "chords": [
@@ -2646,8 +2646,8 @@
                   "uncertain": false,
                   "sourceConfidence": 0.85,
                   "alternatives": [],
-                  "sourceEventStartSeconds": 270.0,
-                  "beats": 2.0,
+                  "sourceEventStartSeconds": 270,
+                  "beats": 2,
                   "continuation": false
                 },
                 {
@@ -2664,12 +2664,12 @@
                   "sourceConfidence": 0.85,
                   "alternatives": [],
                   "sourceEventStartSeconds": 271.5,
-                  "beats": 2.0,
+                  "beats": 2,
                   "continuation": false
                 }
               ],
               "globalBar": 91,
-              "startSeconds": 270.0
+              "startSeconds": 270
             },
             {
               "chords": [
@@ -2692,7 +2692,7 @@
                 }
               ],
               "globalBar": 92,
-              "startSeconds": 273.0
+              "startSeconds": 273
             },
             {
               "chords": [
@@ -2715,18 +2715,892 @@
                 }
               ],
               "globalBar": 93,
-              "startSeconds": 276.0
+              "startSeconds": 276
             },
             {
               "chords": [],
               "globalBar": 94,
-              "startSeconds": 279.0,
+              "startSeconds": 279,
               "rest": true,
               "comment": "Recording tail: no chord assigned after the final sustained F. This is an unmapped interval, not a verified claim of silence."
             }
           ],
           "uncertainChords": 0,
           "tension": 1
+        }
+      ]
+    },
+    {
+      "id": "engraved-name-crowd-lu",
+      "title": "刻在我心底的名字",
+      "artist": "盧廣仲 · Crowd Lu",
+      "key": "Bb",
+      "tempo": 67,
+      "meter": [
+        4,
+        4
+      ],
+      "duration": 342.9123,
+      "analysisStatus": "Independent audio study · selected passages",
+      "summary": "In Crowd Lu’s 2020 recording, B♭ provides a point of return. Two colours keep pulling against it. D7 moves toward G minor, while E♭ darkens to E♭ minor over the same foundation. The timestamps use the 5:43 music video.",
+      "thesis": "Compare two uses of the same piano key. Over D, F♯ draws the ear toward G and the relative minor. Over E♭, G♭ is the lowered third that turns a major sonority minor. One pitches the phrase forward. The other changes the sound around a bass that stays in place.",
+      "tensionNote": "The opening is quiet and close. The first chorus lifts, the later verse draws back, and the second chorus builds to the fullest sound around 3:53–3:59. My emotional peak is the final refrain around 4:47–5:01. After the backing falls almost silent, the familiar melody returns with the voice nearly alone. The last ringing B♭ lets that tension settle. Times refer to the music video.",
+      "arc": [
+        "0:27 · The opening outlines B♭–G–E♭ in the low register. E♭ lasts across a change from G natural to G♭.",
+        "2:01 and 3:40 · D7 points toward G minor in both choruses. Compare how each return carries the same push with different weight in the recording.",
+        "3:19–3:29 · A short Fm7–B♭7 approach to E♭ leads to another major-to-minor change over the same bass. This passage also falls in the aligned Apple preview.",
+        "4:47–5:01 · In the last refrain, the voice has little audible low support for stretches. The map leaves this passage open before the instruments and B♭ return."
+      ],
+      "evidenceNote": "I decoded the full music-video audio and measured the low-register fundamentals separately from pitch classes higher in the mix. I used time windows spanning several attacks to identify bass movement, then compared equal-tempered pitch peaks across repeats. Some notes may come from the singer, an instrument’s overtones, or dialogue, so a pitch appearing in the mix alone does not establish a chord extension. I selected chord families by checking bass, characteristic tones and the next harmony together. The arranged playback illustrates the proposed chords. No chord sheet or MIDI was used as a source.",
+      "melodyStatus": "The study follows the vocal entrances and the exposed final refrain by listening position. A note-by-note vocal transcription is outside this study.",
+      "timingNote": "An onset analysis of the low band gives a working pulse near 67 beats per minute. The 4/4 bar layout is an approximate reading of the repeated groupings. The first minute of the official single aligns to the video at +26.346 seconds. The Apple preview aligns to 3:01.339 in the video across its full 30 seconds. Use the music-video clock for every timestamp here. The commercial single has a different opening and length. Gaps and unmapped bars mark material outside the selected reduction.",
+      "sources": [
+        {
+          "title": "Music video used for the time map · Bilibili",
+          "url": "https://www.bilibili.com/video/BV1nj411T7sT/",
+          "note": "The full 342.912-second audio was measured. Movie dialogue and incidental audio occur in this edit."
+        },
+        {
+          "title": "Team Ear Music · original release and credits",
+          "url": "https://www.team-ear.com/news_detail.php?id=2877",
+          "note": "Release identity and links to the 2020 single."
+        },
+        {
+          "title": "Crowd Lu · official studio single on YouTube",
+          "url": "https://www.youtube.com/watch?v=56z2jipIwSQ",
+          "note": "The opening minute provided a dialogue-free check. Add 26.346 seconds to the song’s time in that verified early interval to find it in the video."
+        },
+        {
+          "title": "Apple Music · official preview",
+          "url": "https://music.apple.com/tw/song/1528149435",
+          "note": "The 30-second preview starts around 3:01.34 on the video clock. It independently corroborates the D-major colour and the E♭ major-to-minor turn."
+        }
+      ],
+      "sections": [
+        {
+          "id": "opening",
+          "name": "Opening · major turns minor",
+          "startSeconds": 27.32,
+          "tension": 1,
+          "role": "Hear the same E♭ foundation take on two colours.",
+          "analysis": "The low-register outline is B♭–G–E♭–E♭. The third region has G natural against E♭ and B♭. In the next one, G♭ enters over the same E♭. Treat B♭ with its added colour and the exact extensions as provisional. The major-to-minor change is easier to hear than the complete voicing.",
+          "melodyNote": "Follow the instrumental attack and listen for G dropping a half step to G♭ around video 0:38. In the official single this is around 0:12.",
+          "transition": "B♭ returns after the minor colour. Compare how different that return feels if you keep E♭ major in both bars.",
+          "relatedEntryIds": [
+            "a-small-ache"
+          ],
+          "labConnection": "Try E♭ in the fourth bar, then restore E♭m. Hold B♭ in the top register while you lower only the G.",
+          "endSeconds": 41.6484,
+          "bars": [
+            {
+              "chords": [
+                {
+                  "symbol": "Bbadd9",
+                  "beats": 4,
+                  "notes": [
+                    46,
+                    58,
+                    62,
+                    65,
+                    72
+                  ],
+                  "uncertain": true,
+                  "alternatives": [
+                    "Bbsus2"
+                  ],
+                  "roman": "I(add9)",
+                  "comment": "B♭ anchors the low register. C and F are prominent. Listen for D to distinguish the major and suspended readings. Compare Bbsus2 in the recording. The playback voicing is arranged for illustration."
+                }
+              ]
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Gm7",
+                  "beats": 4,
+                  "notes": [
+                    43,
+                    58,
+                    62,
+                    65,
+                    67
+                  ],
+                  "uncertain": true,
+                  "alternatives": [
+                    "Gm"
+                  ],
+                  "roman": "vi7",
+                  "comment": "G in the low register and B♭/D support a G-minor family. F also appears. Compare the simpler triad in a busy vocal passage. Compare Gm in the recording. The playback voicing is arranged for illustration."
+                }
+              ]
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Ebmaj7",
+                  "beats": 4,
+                  "notes": [
+                    39,
+                    58,
+                    62,
+                    63,
+                    67
+                  ],
+                  "uncertain": true,
+                  "alternatives": [
+                    "Eb"
+                  ],
+                  "roman": "IVmaj7",
+                  "comment": "E♭ with G and B♭ makes a major colour. D is audible in the upper register. Test whether it belongs to the accompaniment or a passing line. Compare Eb in the recording. The playback voicing is arranged for illustration."
+                }
+              ]
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Ebm",
+                  "beats": 4,
+                  "notes": [
+                    39,
+                    58,
+                    63,
+                    66
+                  ],
+                  "uncertain": false,
+                  "roman": "iv",
+                  "comment": "E♭ stays under the change from G natural to G♭. The plain minor symbol describes that colour and leaves extensions open. The playback voicing is arranged for illustration."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "opening-return",
+          "name": "Opening continuation",
+          "startSeconds": 41.6484,
+          "tension": 2,
+          "role": "The bass returns to B♭ and moves toward F.",
+          "analysis": "The early clean recording supports a B♭–G–C–F bass outline. C, E♭, G and B♭ become especially clear in the C region. The F region retains a suspended colour. Exact extensions are harder to separate from the lines above.",
+          "melodyNote": "Listen to how long C and B♭ can stay in earshot while the bass moves from C to F.",
+          "transition": "The recording lingers before the sung verse. The map resumes where the B♭ support and vocal entrance can be compared.",
+          "relatedEntryIds": [
+            "room-to-breathe"
+          ],
+          "endSeconds": 55.9768,
+          "bars": [
+            {
+              "chords": [
+                {
+                  "symbol": "Bbadd9",
+                  "beats": 4,
+                  "notes": [
+                    46,
+                    58,
+                    62,
+                    65,
+                    72
+                  ],
+                  "uncertain": true,
+                  "alternatives": [
+                    "Bbsus2"
+                  ],
+                  "roman": "I(add9)",
+                  "comment": "B♭ anchors the low register. C and F are prominent. Listen for D to distinguish the major and suspended readings. Compare Bbsus2 in the recording. The playback voicing is arranged for illustration."
+                }
+              ]
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Gm7",
+                  "beats": 4,
+                  "notes": [
+                    43,
+                    58,
+                    62,
+                    65,
+                    67
+                  ],
+                  "uncertain": true,
+                  "alternatives": [
+                    "Gm"
+                  ],
+                  "roman": "vi7",
+                  "comment": "G in the low register and B♭/D support a G-minor family. F also appears. Compare the simpler triad in a busy vocal passage. Compare Gm in the recording. The playback voicing is arranged for illustration."
+                }
+              ]
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Cm7",
+                  "beats": 4,
+                  "notes": [
+                    36,
+                    60,
+                    63,
+                    67,
+                    70
+                  ],
+                  "uncertain": false,
+                  "roman": "ii7",
+                  "comment": "C in the low register with E♭, G and B♭ supports a C-minor seventh family. The playback voicing is arranged for illustration."
+                }
+              ]
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "F7sus4",
+                  "beats": 4,
+                  "notes": [
+                    41,
+                    60,
+                    63,
+                    65,
+                    70
+                  ],
+                  "uncertain": true,
+                  "alternatives": [
+                    "Fsus4"
+                  ],
+                  "roman": "V7sus4",
+                  "comment": "The F region includes B♭, C and E♭. A natural is clearer in some later F windows. The exact point where the suspension gives way remains open. Compare Fsus4 in the recording. The playback voicing is arranged for illustration."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "verse-turn",
+          "name": "First verse · toward G minor",
+          "startSeconds": 60.02,
+          "tension": 2,
+          "role": "Find the first strong pull away from B♭.",
+          "analysis": "The clean first minute reveals low B♭, then A, D and G. In the D region, F♯ is the telling pitch. It appears before the G-minor arrival and gives the change direction.",
+          "melodyNote": "The first sung line is heard over the B♭ region. Near 1:05–1:08 in the video, follow the lower notes apart from the voice.",
+          "transition": "The G-minor arrival provides a local destination. B♭ remains the larger point of return.",
+          "relatedEntryIds": [
+            "letting-the-guard-down"
+          ],
+          "endSeconds": 70.7663,
+          "bars": [
+            {
+              "chords": [
+                {
+                  "symbol": "Bb",
+                  "beats": 4,
+                  "notes": [
+                    46,
+                    62,
+                    65,
+                    70
+                  ],
+                  "uncertain": false,
+                  "roman": "I",
+                  "comment": "B♭ is the recurring bass anchor here. The basic chord symbol leaves the exact added tones open. The playback voicing is arranged for illustration."
+                }
+              ]
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "F/A",
+                  "beats": 2,
+                  "notes": [
+                    45,
+                    60,
+                    65,
+                    69
+                  ],
+                  "uncertain": true,
+                  "roman": "V⁶",
+                  "comment": "A is audible in the low register. F and C also appear, but the inversion is a tentative reading. The playback voicing is arranged for illustration."
+                },
+                {
+                  "symbol": "D7",
+                  "beats": 2,
+                  "notes": [
+                    38,
+                    60,
+                    62,
+                    66,
+                    69
+                  ],
+                  "uncertain": false,
+                  "roman": "V7/vi",
+                  "comment": "D, F♯, A and C align in the mix. The following G-minor colour supports hearing this as a secondary dominant. The playback voicing is arranged for illustration."
+                }
+              ]
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Gm7",
+                  "beats": 4,
+                  "notes": [
+                    43,
+                    58,
+                    62,
+                    65,
+                    67
+                  ],
+                  "uncertain": true,
+                  "alternatives": [
+                    "Gm"
+                  ],
+                  "roman": "vi7",
+                  "comment": "G in the low register and B♭/D support a G-minor family. F also appears. Compare the simpler triad in a busy vocal passage. Compare Gm in the recording. The playback voicing is arranged for illustration."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chorus-one",
+          "name": "First chorus · D7 to G minor",
+          "startSeconds": 117.84,
+          "tension": 4,
+          "role": "Hear the relative minor become a distinct destination.",
+          "analysis": "B♭ opens the chorus. Around 2:01–2:04, D and F♯ are prominent, with A and C also present. G, B♭ and D follow. This is the clearest secondary-dominant relationship in the chorus. The E-bass colour afterward suggests another push toward F, with its exact upper notes open.",
+          "melodyNote": "The sung phrase starts before the strong B♭ attack. Compare the bass arrival around 1:58 with where you hear the new line begin.",
+          "transition": "The G-minor pull has a clear destination. The later C-family and F-family colours keep the larger chorus moving.",
+          "relatedEntryIds": [
+            "engraved-name-chorus-study",
+            "letting-the-guard-down",
+            "gentle-momentum"
+          ],
+          "labConnection": "Longing Study plays these four bars with F–F♯–G at the top of the voicing. Try Dm7 in place of D7 and listen to how that one change affects the landing on G minor.",
+          "endSeconds": 132.1684,
+          "bars": [
+            {
+              "chords": [
+                {
+                  "symbol": "Bb",
+                  "beats": 4,
+                  "notes": [
+                    46,
+                    62,
+                    65,
+                    70
+                  ],
+                  "uncertain": false,
+                  "roman": "I",
+                  "comment": "B♭ is the recurring bass anchor here. The basic chord symbol leaves the exact added tones open. The playback voicing is arranged for illustration."
+                }
+              ]
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "D7",
+                  "beats": 4,
+                  "notes": [
+                    38,
+                    60,
+                    62,
+                    66,
+                    69
+                  ],
+                  "uncertain": false,
+                  "roman": "V7/vi",
+                  "comment": "D, F♯, A and C align in the mix. The following G-minor colour supports hearing this as a secondary dominant. The playback voicing is arranged for illustration."
+                }
+              ]
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Gm7",
+                  "beats": 4,
+                  "notes": [
+                    43,
+                    58,
+                    62,
+                    65,
+                    67
+                  ],
+                  "uncertain": true,
+                  "alternatives": [
+                    "Gm"
+                  ],
+                  "roman": "vi7",
+                  "comment": "G in the low register and B♭/D support a G-minor family. F also appears. Compare the simpler triad in a busy vocal passage. Compare Gm in the recording. The playback voicing is arranged for illustration."
+                }
+              ]
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "C7/E",
+                  "beats": 4,
+                  "notes": [
+                    40,
+                    60,
+                    64,
+                    67,
+                    70
+                  ],
+                  "uncertain": true,
+                  "alternatives": [
+                    "C/E"
+                  ],
+                  "roman": "V7/V (E in bass)",
+                  "comment": "Low E and upper C/G suggest a C dominant colour in inversion. The seventh and apparent bass can be obscured by the mix here. Compare C/E in the recording. The playback voicing is arranged for illustration."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "major-minor-turn",
+          "name": "Later verse · a turn through E♭",
+          "startSeconds": 187.88,
+          "tension": 3,
+          "role": "Hear the expanded version of the opening’s colour change.",
+          "analysis": "The paired audio sources support a D7–G-minor turn and then Fm7–B♭7 into E♭. The latter works as a local ii–V toward E♭. The music then changes to E♭ minor over the same E♭ foundation. At around 3:22–3:29, listen for G natural giving way to G♭. The A-bass preparation before D7 and extensions around F remain tentative.",
+          "melodyNote": "An upper D or F in the mix may be the voice. Listen to the change in the accompaniment’s third before labeling the complete voicing.",
+          "transition": "The shift to minor colours the subdominant region before the F-based approach returns the music toward B♭.",
+          "relatedEntryIds": [
+            "making-room",
+            "a-small-ache"
+          ],
+          "labConnection": "Compare bars 4–6. First hear how two quick chords point toward E♭. Then keep the E♭ bass steady and compare the major and minor versions.",
+          "endSeconds": 212.9546,
+          "bars": [
+            {
+              "chords": [
+                {
+                  "symbol": "Bb",
+                  "beats": 4,
+                  "notes": [
+                    46,
+                    62,
+                    65,
+                    70
+                  ],
+                  "uncertain": false,
+                  "roman": "I",
+                  "comment": "B♭ is the recurring bass anchor here. The basic chord symbol leaves the exact added tones open. The playback voicing is arranged for illustration."
+                }
+              ]
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Am7b5",
+                  "beats": 2,
+                  "notes": [
+                    45,
+                    60,
+                    63,
+                    67,
+                    69
+                  ],
+                  "uncertain": true,
+                  "alternatives": [
+                    "Am7"
+                  ],
+                  "roman": "iiø7/vi",
+                  "comment": "The low A leads to D7. The upper notes allow a half-diminished approach, but the presence of E♭ against A needs a closer check. Compare Am7 in the recording. The playback voicing is arranged for illustration."
+                },
+                {
+                  "symbol": "D7",
+                  "beats": 2,
+                  "notes": [
+                    38,
+                    60,
+                    62,
+                    66,
+                    69
+                  ],
+                  "uncertain": false,
+                  "roman": "V7/vi",
+                  "comment": "D, F♯, A and C align in the mix. The following G-minor colour supports hearing this as a secondary dominant. The playback voicing is arranged for illustration."
+                }
+              ]
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Gm7",
+                  "beats": 4,
+                  "notes": [
+                    43,
+                    58,
+                    62,
+                    65,
+                    67
+                  ],
+                  "uncertain": true,
+                  "alternatives": [
+                    "Gm"
+                  ],
+                  "roman": "vi7",
+                  "comment": "G in the low register and B♭/D support a G-minor family. F also appears. Compare the simpler triad in a busy vocal passage. Compare Gm in the recording. The playback voicing is arranged for illustration."
+                }
+              ]
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Fm7",
+                  "beats": 2,
+                  "notes": [
+                    41,
+                    60,
+                    63,
+                    65,
+                    68
+                  ],
+                  "uncertain": false,
+                  "roman": "ii7/IV",
+                  "comment": "F in the low register with A♭, C and E♭ supports an F-minor approach to E♭. The playback voicing is arranged for illustration."
+                },
+                {
+                  "symbol": "Bb7",
+                  "beats": 2,
+                  "notes": [
+                    46,
+                    58,
+                    62,
+                    65,
+                    68
+                  ],
+                  "uncertain": false,
+                  "roman": "V7/IV",
+                  "comment": "B♭ replaces F in the bass and D, F and A♭ are present. E♭ follows. The playback voicing is arranged for illustration."
+                }
+              ]
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Eb",
+                  "beats": 4,
+                  "notes": [
+                    39,
+                    58,
+                    63,
+                    67
+                  ],
+                  "uncertain": false,
+                  "roman": "IV",
+                  "comment": "E♭ is the foundation with G natural and B♭ in the mix. The playback voicing is arranged for illustration."
+                }
+              ]
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Ebm",
+                  "beats": 4,
+                  "notes": [
+                    39,
+                    58,
+                    63,
+                    66
+                  ],
+                  "uncertain": false,
+                  "roman": "iv",
+                  "comment": "E♭ stays under the change from G natural to G♭. The plain minor symbol describes that colour and leaves extensions open. The playback voicing is arranged for illustration."
+                }
+              ]
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "F7sus4",
+                  "beats": 4,
+                  "notes": [
+                    41,
+                    60,
+                    63,
+                    65,
+                    70
+                  ],
+                  "uncertain": true,
+                  "alternatives": [
+                    "Fsus4"
+                  ],
+                  "roman": "V7sus4",
+                  "comment": "The F region includes B♭, C and E♭. A natural is clearer in some later F windows. The exact point where the suspension gives way remains open. Compare Fsus4 in the recording. The playback voicing is arranged for illustration."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chorus-two",
+          "name": "Second chorus · the same pull returns",
+          "startSeconds": 216.45,
+          "tension": 4,
+          "role": "Compare a familiar progression at a stronger moment in the arrangement.",
+          "analysis": "B♭, D7 and G minor recur around 3:36, 3:40 and 3:44. The D and F♯ are again audible before the low G. A low F or F♯ occasionally interrupts that G region. The chart shows the larger chord family rather than turning each moving bass note into a new chord.",
+          "melodyNote": "Compare the anticipation before the B♭ attack with the first chorus. Additional low attacks in this return change how firmly you feel the landing.",
+          "transition": "The same local departure continues into a more active accompaniment.",
+          "relatedEntryIds": [
+            "engraved-name-chorus-study",
+            "letting-the-guard-down"
+          ],
+          "labConnection": "Hear the four-bar shape in Longing Study, then compare how much more weight the fuller backing gives it here.",
+          "endSeconds": 230.7784,
+          "bars": [
+            {
+              "chords": [
+                {
+                  "symbol": "Bb",
+                  "beats": 4,
+                  "notes": [
+                    46,
+                    62,
+                    65,
+                    70
+                  ],
+                  "uncertain": false,
+                  "roman": "I",
+                  "comment": "B♭ is the recurring bass anchor here. The basic chord symbol leaves the exact added tones open. The playback voicing is arranged for illustration."
+                }
+              ]
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "D7",
+                  "beats": 4,
+                  "notes": [
+                    38,
+                    60,
+                    62,
+                    66,
+                    69
+                  ],
+                  "uncertain": false,
+                  "roman": "V7/vi",
+                  "comment": "D, F♯, A and C align in the mix. The following G-minor colour supports hearing this as a secondary dominant. The playback voicing is arranged for illustration."
+                }
+              ]
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Gm7",
+                  "beats": 4,
+                  "notes": [
+                    43,
+                    58,
+                    62,
+                    65,
+                    67
+                  ],
+                  "uncertain": true,
+                  "alternatives": [
+                    "Gm"
+                  ],
+                  "roman": "vi7",
+                  "comment": "G in the low register and B♭/D support a G-minor family. F also appears. Compare the simpler triad in a busy vocal passage. Compare Gm in the recording. The playback voicing is arranged for illustration."
+                }
+              ]
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "C7/E",
+                  "beats": 4,
+                  "notes": [
+                    40,
+                    60,
+                    64,
+                    67,
+                    70
+                  ],
+                  "uncertain": true,
+                  "alternatives": [
+                    "C/E"
+                  ],
+                  "roman": "V7/V (E in bass)",
+                  "comment": "Low E and upper C/G suggest a C dominant colour in inversion. The seventh and apparent bass can be obscured by the mix here. Compare C/E in the recording. The playback voicing is arranged for illustration."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "chorus-answer",
+          "name": "Second chorus · answering phrase",
+          "startSeconds": 245.03,
+          "tension": 4,
+          "role": "Hear a quick return to the same B♭–D7–G-minor shape.",
+          "analysis": "The bass and upper pitches trace B♭, D7 and G minor again. The E bass returns with C and G above. This fourth chord sounds directed toward F, although the full voicing is hard to isolate.",
+          "melodyNote": "Listen to the upper phrase through the low D and F♯ colour, then separately track the low G on the answer.",
+          "transition": "The accompaniment eventually draws back, leaving the last vocal entrance more exposed.",
+          "relatedEntryIds": [
+            "engraved-name-chorus-study",
+            "gentle-momentum"
+          ],
+          "labConnection": "Compare this answer to Longing Study. The chords outline the same movement, while the vocal and backing change how the return feels.",
+          "endSeconds": 259.3584,
+          "bars": [
+            {
+              "chords": [
+                {
+                  "symbol": "Bb",
+                  "beats": 4,
+                  "notes": [
+                    46,
+                    62,
+                    65,
+                    70
+                  ],
+                  "uncertain": false,
+                  "roman": "I",
+                  "comment": "B♭ is the recurring bass anchor here. The basic chord symbol leaves the exact added tones open. The playback voicing is arranged for illustration."
+                }
+              ]
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "D7",
+                  "beats": 4,
+                  "notes": [
+                    38,
+                    60,
+                    62,
+                    66,
+                    69
+                  ],
+                  "uncertain": false,
+                  "roman": "V7/vi",
+                  "comment": "D, F♯, A and C align in the mix. The following G-minor colour supports hearing this as a secondary dominant. The playback voicing is arranged for illustration."
+                }
+              ]
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Gm7",
+                  "beats": 4,
+                  "notes": [
+                    43,
+                    58,
+                    62,
+                    65,
+                    67
+                  ],
+                  "uncertain": true,
+                  "alternatives": [
+                    "Gm"
+                  ],
+                  "roman": "vi7",
+                  "comment": "G in the low register and B♭/D support a G-minor family. F also appears. Compare the simpler triad in a busy vocal passage. Compare Gm in the recording. The playback voicing is arranged for illustration."
+                }
+              ]
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "C7/E",
+                  "beats": 4,
+                  "notes": [
+                    40,
+                    60,
+                    64,
+                    67,
+                    70
+                  ],
+                  "uncertain": true,
+                  "alternatives": [
+                    "C/E"
+                  ],
+                  "roman": "V7/V (E in bass)",
+                  "comment": "Low E and upper C/G suggest a C dominant colour in inversion. The seventh and apparent bass can be obscured by the mix here. Compare C/E in the recording. The playback voicing is arranged for illustration."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "exposed-refrain",
+          "name": "Final refrain · exposed voice",
+          "startSeconds": 286.9,
+          "tension": 5,
+          "role": "Hear the familiar tune with little audible low support.",
+          "analysis": "Across several seconds after 4:47, the voice is clear while the low-band evidence is sparse. It would be easy to put chords under the melody from memory of earlier choruses. These bars are left unmapped so you can hear the contrast in the recording.",
+          "melodyNote": "Compare this entrance with the richer second chorus around 3:36. Listen for how much of the harmonic implication you remember even when the backing recedes.",
+          "transition": "The low register returns later. The ending chart picks up at the sustained B♭ sonority.",
+          "endSeconds": 301.2284,
+          "bars": [
+            {
+              "rest": true,
+              "chords": []
+            },
+            {
+              "rest": true,
+              "chords": []
+            },
+            {
+              "rest": true,
+              "chords": []
+            },
+            {
+              "rest": true,
+              "chords": []
+            }
+          ]
+        },
+        {
+          "id": "ending",
+          "name": "Ending · the B♭ return",
+          "startSeconds": 334.84,
+          "endSeconds": 342.9123,
+          "tension": 1,
+          "role": "Hear the tonal center settle into the last ringing sound.",
+          "analysis": "The low B♭ is again strong at the end. A and F ring above it, and D is audible earlier in the sonority. B♭maj7 captures the colour in this reduction. It takes time for the upper sound to decay while the bass still anchors the ending.",
+          "melodyNote": "Listen past the sung refrain and hear how the instruments take over the release.",
+          "transition": "The video fades after the sustained return.",
+          "relatedEntryIds": [
+            "easy-conversation"
+          ],
+          "bars": [
+            {
+              "chords": [
+                {
+                  "symbol": "Bbmaj7",
+                  "beats": 4,
+                  "notes": [
+                    46,
+                    58,
+                    62,
+                    65,
+                    69
+                  ],
+                  "uncertain": false,
+                  "roman": "Imaj7",
+                  "comment": "The last low B♭ is sustained while A and F are prominent, with D audible earlier in the ringing chord. The playback voicing is arranged for illustration."
+                }
+              ]
+            },
+            {
+              "chords": [
+                {
+                  "symbol": "Bbmaj7",
+                  "beats": 4,
+                  "notes": [
+                    46,
+                    58,
+                    62,
+                    65,
+                    69
+                  ],
+                  "uncertain": false,
+                  "continuation": true,
+                  "roman": "Imaj7",
+                  "comment": "The last low B♭ is sustained while A and F are prominent, with D audible earlier in the ringing chord. The playback voicing is arranged for illustration."
+                }
+              ]
+            }
+          ]
         }
       ]
     }

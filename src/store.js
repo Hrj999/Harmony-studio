@@ -55,6 +55,38 @@ function create(options){
  const labSeed=Array.isArray(options.labSeed)?{entries:options.labSeed}:options.labSeed;
  const atlasSeed=Array.isArray(options.atlasSeed)?{songs:options.atlasSeed}:options.atlasSeed;
  const defaults={format:'harmony-studio',schemaVersion:1,lab:validateLab({version:1,entries:clone(labSeed.entries),notes:{},favorites:[],selectedId:labSeed.entries[0].id,experiments:{}},H),atlas:validateAtlas({version:1,songs:clone(atlasSeed.songs),notes:{},sections:{},selectedId:atlasSeed.songs[0].id},A),activeView:'songs'};
+ const defaultSongs=defaults.atlas.songs;
+ const chorusStudy=defaults.lab.entries.find(entry=>entry.id==='engraved-name-chorus-study');
+ function addChorusStudy(lab) {
+  if(!chorusStudy||lab.entries.length>=1000||lab.entries.some(entry=>entry.id===chorusStudy.id))return lab;
+  return {...lab,entries:[...lab.entries,clone(chorusStudy)]};
+ }
+ function addMissingDefaultSongs(atlas) {
+  const savedIds=new Set(atlas.songs.map(song=>song.id));
+  const missing=defaultSongs.filter(song=>!savedIds.has(song.id)).slice(0,100-atlas.songs.length);
+  const songs = atlas.songs.map(savedSong => {
+   const reference = defaultSongs.find(song => song.id === savedSong.id);
+   const hasTensionProfile = typeof reference?.tensionNote === 'string';
+   const hasChorusStudy = chorusStudy?.sourceSong?.songId === savedSong.id;
+   if (!reference || (!hasTensionProfile && !hasChorusStudy)) return savedSong;
+   const sections = savedSong.sections.map(section => {
+    const source = reference.sections.find(candidate => candidate.id === section.id);
+    let updated = section;
+    if (hasTensionProfile && section.tension === undefined && source?.tension !== undefined) {
+     updated = {...updated, tension: source.tension};
+    }
+    const links = section.relatedEntryIds || [];
+    if (hasChorusStudy && source?.relatedEntryIds?.includes(chorusStudy.id) && !links.includes(chorusStudy.id) && links.length < 40) {
+     updated = {...updated, relatedEntryIds: [...links, chorusStudy.id]};
+    }
+    return updated;
+   });
+   const updated = {...savedSong, sections};
+   if (hasTensionProfile && savedSong.tensionNote === undefined) updated.tensionNote = reference.tensionNote;
+   return updated;
+  });
+  return {...atlas,songs:[...songs,...clone(missing)]};
+ }
  let state=defaults,lastError='',storage,recoveryBlocked=false;
  const recovery=[],recoveryParts=new Set(),listeners=new Set();
  if(typeof onChange==='function')listeners.add(onChange);
@@ -62,7 +94,7 @@ function create(options){
  function validateEnvelope(input){
   if(!plain(input)||input.format!=='harmony-studio'||input.schemaVersion!==1)throw Error('Choose a Harmony Studio version 1 backup.');
   if(input.activeView!==undefined&&!['songs','lab'].includes(input.activeView))throw Error('The saved workspace is unreadable.');
-  return {...clone(input),format:'harmony-studio',schemaVersion:1,lab:validateLab(input.lab,H),atlas:validateAtlas(input.atlas,A),activeView:input.activeView||'songs'};
+  return {...clone(input),format:'harmony-studio',schemaVersion:1,lab:addChorusStudy(validateLab(input.lab,H)),atlas:addMissingDefaultSongs(validateAtlas(input.atlas,A)),activeView:input.activeView||'songs'};
  }
  function read(key){if(!storage)return null;return storage.getItem(key);}
  function blocked(key,raw,error){recoveryBlocked=true;for(const part of key===STORAGE_KEY?['lab','songs']:key===LEGACY_KEYS.lab?['lab']:['songs'])recoveryParts.add(part);recovery.push({key,raw,error:error.message||String(error)});lastError='A saved collection could not be read. Its stored record has been kept for recovery. Import a valid backup before saving over it.';}
@@ -71,7 +103,7 @@ function create(options){
  if(combined!==null&&combined!==undefined){try{state=validateEnvelope(JSON.parse(combined));}catch(error){blocked(STORAGE_KEY,combined,error);}}
  else for(const [view,key]of Object.entries(LEGACY_KEYS)){
   let raw;try{raw=read(key);}catch(error){lastError='Browser storage is unavailable. Changes stay in this session; back up before closing.';continue;}
-  if(raw!==null&&raw!==undefined){try{state[viewKey(view)]=view==='lab'?validateLab(JSON.parse(raw),H):validateAtlas(JSON.parse(raw),A);}catch(error){blocked(key,raw,error);}}
+  if(raw!==null&&raw!==undefined){try{state[viewKey(view)]=view==='lab'?addChorusStudy(validateLab(JSON.parse(raw),H)):addMissingDefaultSongs(validateAtlas(JSON.parse(raw),A));}catch(error){blocked(key,raw,error);}}
  }
  function stats(){return {entries:state.lab.entries.length,songs:state.atlas.songs.length,experiments:Object.keys(state.lab.experiments||{}).length};}
  function emit(){const info=stats();for(const listener of listeners){try{listener(clone(info));}catch(error){/* A display listener cannot invalidate an already-saved collection. */}}}
@@ -84,8 +116,8 @@ function create(options){
   if(!plain(data))throw Error('Choose a Harmony Studio, Phrase Lab, or Song Atlas JSON backup.');
   if(data.format==='harmony-studio'||owns(data,'lab')||owns(data,'atlas'))return {kind:'studio',parts:['lab','songs'],candidate:validateEnvelope(data),replaces:'Both workspaces'};
   if(owns(data,'entries')&&owns(data,'songs'))throw Error('This backup mixes two older formats. Import each original backup separately.');
-  if(owns(data,'entries'))return {kind:'lab',parts:['lab'],candidate:{...clone(state),lab:validateLab(data,H)},replaces:'Phrase Lab only'};
-  if(owns(data,'songs'))return {kind:'atlas',parts:['songs'],candidate:{...clone(state),atlas:validateAtlas(data,A)},replaces:'Song Atlas only'};
+  if(owns(data,'entries'))return {kind:'lab',parts:['lab'],candidate:{...clone(state),lab:addChorusStudy(validateLab(data,H))},replaces:'Phrase Lab only'};
+  if(owns(data,'songs'))return {kind:'atlas',parts:['songs'],candidate:{...clone(state),atlas:addMissingDefaultSongs(validateAtlas(data,A))},replaces:'Song Atlas only'};
   throw Error('This file does not contain a studio, dictionary, or song collection.');
  }
  function describe(plan){return {kind:plan.kind,parts:clone(plan.parts),replaces:plan.replaces,counts:{entries:plan.candidate.lab.entries.length,songs:plan.candidate.atlas.songs.length,experiments:Object.keys(plan.candidate.lab.experiments||{}).length}};}

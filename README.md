@@ -1,4 +1,13 @@
 # Harmony-studio
+
+## v1.1 · 新增歌曲研究
+
+在 Song Atlas 的曲目菜单中，可以选择金莎的《着迷》或盧廣仲的《刻在我心底的名字》。打开新版时，新曲会自动出现在原有收藏中。 [打开《刻在我心底的名字》的开头段落](index.html#songs?song=engraved-name-crowd-lu&section=opening)
+
+这次从录音出发，分开观察低音和较高声部的音高，比较重复段落，再用前后和弦判断功能。可以先听开头 E♭ 大三和弦转 E♭ 小三和弦，再比较两次副歌的 D7 到 G 小调。这份选段分析使用 5:43 版 MV 的时间。问号表示还有其他读法，试听用的是示范配音。 [参考 MV](https://www.bilibili.com/video/BV1nj411T7sT/) · [发行资料](https://www.team-ear.com/news_detail.php?id=2877)
+
+## 原始项目说明
+
 This is my studio for harmony laboratory. It aims for personalized harmony dictionary building.
 这是2026.11月初通过自己用ai作和声分析学习，然后尝试建立的一个网站。目前是v1.0版本，还没有配中文。自己尝试了拓宽范围，但效果不好。
 例子选用的是金莎的《着迷》，有这首歌的和声分析。

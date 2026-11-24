@@ -11,7 +11,7 @@ function requireId(value,label){if(typeof value!=='string'||!/^[A-Za-z0-9][A-Za-
 function validateSong(song){
  if(!plain(song))throw Error('Choose a song to analyse.');
  requireId(song.id,'Song ID');requireText(song.title,'Song title',160);requireText(song.artist,'Artist',200,true);
- for(const field of ['summary','thesis','evidence','evidenceNote','melodyStatus','timingNote','analysisStatus'])requireText(song[field],'Song '+field,8000,true);
+ for(const field of ['summary','thesis','evidence','evidenceNote','melodyStatus','timingNote','analysisStatus','tensionNote'])requireText(song[field],'Song '+field,8000,true);
  if(song.arc!==undefined){if(!Array.isArray(song.arc)||song.arc.length>30)throw Error('The song arc must be a list of no more than 30 listening notes.');for(const step of song.arc){if(typeof step==='string')requireText(step,'Arc note',2000,true);else if(plain(step))requireText(step.text,'Arc note',2000);else throw Error('Each arc note must be text or an object with a text field.');}}
  if(song.sources!==undefined){if(!Array.isArray(song.sources)||song.sources.length>20)throw Error('Keep no more than 20 recording or analysis sources.');for(const source of song.sources){if(!plain(source))throw Error('A source is missing its details.');requireText(source.title,'Source title',240);requireText(source.url,'Source link',2000);requireText(source.note,'Source note',5000,true);}}
  if(!H.keys.includes(song.key))throw Error('Choose a supported home key.');
@@ -43,26 +43,45 @@ function validateSong(song){
  }
  return song;
 }
-function buildTimeline(song){
- validateSong(song);const beatSeconds=60/song.tempo,events=[];let globalBar=0;
+function transposeChord(chord,delta,key){
+ if(delta===0)return chord;
+ const symbol=H.transposeSymbol(chord.symbol,delta,key);
+ // Some analyses include literal pitches in an otherwise relative function label.
+ const roman=typeof chord.roman==='string'?chord.roman.replace(/(^|[\s(/])([A-G][#b♯♭]?)(?=[m\d\s)?/]|$)/g,
+  (_,prefix,note)=>prefix+H.pretty(H.transposeSymbol(note,delta,key))):chord.roman;
+ return {...chord,symbol,notes:chord.notes.map(note=>note+delta),roman};
+}
+function buildTimeline(song,key=song?.key){
+ validateSong(song);
+ if(!H.keys.includes(key))throw Error('Choose a supported playback key.');
+ const delta=H.shift(song.key,key),beatSeconds=60/song.tempo,events=[];let globalBar=0;
  song.sections.forEach((section,sectionIndex)=>{
   section.bars.forEach((bar,barIndex)=>{
    let withinBar=0;
-   for(const chord of bar.chords){events.push({...copy(chord),sectionId:section.id,sectionIndex,barIndex,globalBar,eventIndex:events.length,startSeconds:section.startSeconds+(barIndex*4+withinBar)*beatSeconds,durationSeconds:chord.beats*beatSeconds});withinBar+=chord.beats;}
+   for(const chord of bar.chords){events.push({...transposeChord(copy(chord),delta,key),sectionId:section.id,sectionIndex,barIndex,globalBar,eventIndex:events.length,startSeconds:section.startSeconds+(barIndex*4+withinBar)*beatSeconds,durationSeconds:chord.beats*beatSeconds});withinBar+=chord.beats;}
    globalBar++;
   });
  });
  return {events,duration:song.duration};
 }
-function playbackEvents(song){
+function playbackEvents(song,key=song?.key){
  const out=[];
- for(const event of buildTimeline(song).events){
+ for(const event of buildTimeline(song,key).events){
   const previous=out[out.length-1];
   if(event.continuation===true&&previous&&event.sectionId===previous.sectionId&&event.symbol===previous.symbol&&Math.abs(previous.startSeconds+previous.durationSeconds-event.startSeconds)<.001&&JSON.stringify(event.notes)===JSON.stringify(previous.notes)){
    previous.durationSeconds+=event.durationSeconds;previous.beats+=event.beats;previous.continuedEventIndices.push(event.eventIndex);
   }else out.push({...event,continuedEventIndices:[event.eventIndex]});
  }
  return out;
+}
+function harmonyAudition(song,key=song?.key){
+ let duration=0;
+ const events=playbackEvents(song,key).map(event=>{
+  const offsetSeconds=duration;
+  duration+=event.durationSeconds;
+  return {...event,offsetSeconds};
+ });
+ return {events,duration};
 }
 function formatTime(seconds){const rounded=Math.max(0,Math.floor(Number(seconds)||0));return Math.floor(rounded/60)+':'+String(rounded%60).padStart(2,'0');}
 function safeURL(value){try{const url=new URL(value);return ['http:','https:'].includes(url.protocol)&&!url.username&&!url.password?url.href:'';}catch(e){return '';}}
@@ -141,18 +160,19 @@ const u32=value=>[(value>>>24)&255,(value>>>16)&255,(value>>>8)&255,value&255];
 function meta(kind,value){const data=typeof value==='string'?encode(value):value;return [255,kind,...vlq(data.length),...data];}
 function makeTrack(events,endTick){events.sort((a,b)=>a.tick-b.tick||a.priority-b.priority);const data=[];let now=0;for(const event of events){data.push(...vlq(event.tick-now),...event.data);now=event.tick;}data.push(...vlq(endTick-now),255,47,0);return [...encode('MTrk'),...u32(data.length),...data];}
 function concatenate(parts){const result=new Uint8Array(parts.reduce((sum,part)=>sum+part.length,0));let offset=0;parts.forEach(part=>{result.set(part,offset);offset+=part.length;});return result;}
-function midi(song){
+function midi(song,key=song?.key){
  validateSong(song);const secToTick=seconds=>Math.round(seconds*song.tempo/60*PPQ),endTick=secToTick(song.duration),us=Math.round(60000000/song.tempo),fifths={C:0,Db:-5,D:2,Eb:-3,E:4,F:-1,'F#':6,G:1,Ab:-4,A:3,Bb:-2,B:5};
- const control=[{tick:0,priority:0,data:meta(3,song.title+' — working harmonic reduction')},{tick:0,priority:1,data:meta(81,[(us>>>16)&255,(us>>>8)&255,us&255])},{tick:0,priority:2,data:meta(88,[4,2,24,8])},{tick:0,priority:3,data:meta(89,[fifths[song.key]&255,0])}];
+ const timeline=buildTimeline(song,key);
+ const control=[{tick:0,priority:0,data:meta(3,song.title+' — working harmonic reduction')},{tick:0,priority:1,data:meta(81,[(us>>>16)&255,(us>>>8)&255,us&255])},{tick:0,priority:2,data:meta(88,[4,2,24,8])},{tick:0,priority:3,data:meta(89,[fifths[key]&255,0])}];
  const tracks=[[],[]];tracks.forEach((track,index)=>track.push({tick:0,priority:0,data:meta(3,index?'Upper chord voices — arranged':'Bass — arranged')},{tick:0,priority:1,data:[192+index,0]}));
  song.sections.forEach(section=>control.push({tick:secToTick(section.startSeconds),priority:4,data:meta(6,section.name)}));
- buildTimeline(song).events.forEach(event=>control.push({tick:secToTick(event.startSeconds),priority:5,data:meta(6,event.symbol+(event.uncertain?' ?':'')+' | '+(event.roman||''))}));
- playbackEvents(song).forEach(event=>{
+ timeline.events.forEach(event=>control.push({tick:secToTick(event.startSeconds),priority:5,data:meta(6,event.symbol+(event.uncertain?' ?':'')+' | '+(event.roman||''))}));
+ playbackEvents(song,key).forEach(event=>{
   const start=secToTick(event.startSeconds),end=Math.min(endTick,Math.max(start+1,secToTick(event.startSeconds+event.durationSeconds*.96)));
   event.notes.forEach((note,index)=>{const channel=index?1:0;tracks[channel].push({tick:start,priority:3,data:[144+channel,note,index?64:57]},{tick:end,priority:2,data:[128+channel,note,0]});});
  });
  return concatenate([[...encode('MThd'),0,0,0,6,0,1,0,3,1,224],makeTrack(control,endTick),makeTrack(tracks[0],endTick),makeTrack(tracks[1],endTick)]);
 }
-global.AtlasCore={validateSong,buildTimeline,playbackEvents,phraseEntry,linkToLab,applyPhraseToSong,formatTime,parseSectionProgression,progressionText,midi};
+global.AtlasCore={validateSong,transposeChord,buildTimeline,playbackEvents,harmonyAudition,phraseEntry,linkToLab,applyPhraseToSong,formatTime,parseSectionProgression,progressionText,midi};
 if(typeof module!=='undefined'&&module.exports)module.exports=global.AtlasCore;
 })(typeof window!=='undefined'?window:globalThis);
