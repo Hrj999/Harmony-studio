@@ -6,6 +6,8 @@
 
 下面这段是ai反馈：这次从录音出发，分开观察低音和较高声部的音高，比较重复段落，再用前后和弦判断功能。可以先听开头 E♭ 大三和弦转 E♭ 小三和弦，再比较两次副歌的 D7 到 G 小调。这份选段分析使用 5:43 版 MV 的时间。问号表示还有其他读法，试听用的是示范配音。 [参考 MV](https://www.bilibili.com/video/BV1nj411T7sT/) · [发行资料](https://www.team-ear.com/news_detail.php?id=2877)
 
+By HRJ 2026/11/24
+
 ## 原始项目说明
 
 This is my studio for harmony laboratory. It aims for personalized harmony dictionary building.
